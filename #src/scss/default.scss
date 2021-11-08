@@ -1,0 +1,98 @@
+$mainfont: 'Inter';
+$mainsize: 16px;
+$maincolor: #3C3C3C;
+$linecolor: #E4E4E4;
+$accentcolor: #FF655E;
+$bgcolor: #232323;
+$redcolor: #EC2027;
+$minwidth: 320px;
+$mw: 1420;
+$md1: $mw+12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 640px;
+$md5: 479.98px;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainfont, sans-serif;
+    font-size: $mainsize;
+    color: $maincolor;
+    overflow-x: hidden;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: $mw+px;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width: $md1) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3) {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $maincolor;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+}
+
+input,
+textarea,
+label {
+    font-family: inherit;
+}

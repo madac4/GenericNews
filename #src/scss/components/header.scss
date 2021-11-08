@@ -1,0 +1,29 @@
+.upper-header {
+    background-color: $bgcolor;
+    &__nav {
+        .upper-header__menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            li {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+                &.active {
+                    a {
+                        background-color: $accentcolor;
+                    }
+                }
+                a {
+                    color: #fff;
+                    display: block;
+                    padding: 10px;
+                    transition: .4s;
+                    &:hover {
+                        background-color: $accentcolor;
+                    }
+                }
+            }
+        }
+    }
+}
