@@ -2,7 +2,6 @@
     display: block;
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
     transition: all 0.4s;
     color: $maincolor;
     &-danger {
@@ -130,25 +129,21 @@ h2 {
     line-height: 140%;
 }
 
-h3 {}
-
-h4 {
+h3 {
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
 }
 
-h5 {
+h4 {
     font-family: 'RobotoSlab';
     font-weight: bold;
     font-size: 18px;
     line-height: 100%;
 }
 
-h6 {
+h5 {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
 }
-
-p {}

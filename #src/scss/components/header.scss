@@ -1,6 +1,6 @@
 .upper-header {
-    background-color: $bgcolor;
     &__nav {
+        background-color: $bgcolor;
         .upper-header__menu {
             display: flex;
             align-items: center;
@@ -8,6 +8,9 @@
             li {
                 &:not(:last-child) {
                     margin-right: 15px;
+                }
+                &:last-child {
+                    margin-right: 10px;
                 }
                 &.active {
                     a {
@@ -23,6 +26,102 @@
                         background-color: $accentcolor;
                     }
                 }
+            }
+        }
+    }
+}
+
+.header {
+    &-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #E4E4E4;
+        padding: 20px;
+        gap: 60px;
+        @media(max-width: $md1) {
+            gap: 30px;
+        }
+    }
+    &-logo {
+        a {
+            img {
+                width: 230px;
+                height: auto;
+            }
+        }
+    }
+    &-menu {
+        flex: 1;
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @media(max-width: $md1) {
+                gap: 15px;
+            }
+            li {
+                &.active {
+                    a {
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    transition: all 0.4s;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    &-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &__search {
+            font-size: 24px;
+            border: 1px solid $maincolor;
+            padding: 0 12px;
+            height: 44px;
+            display: flex;
+            transition: all 0.4s;
+            align-items: center;
+            &:hover {
+                background-color: $maincolor;
+                color: #fff;
+            }
+        }
+        &__language {
+            font-weight: 500;
+            font-size: 14px;
+            padding: 0 12px;
+            border: 1px solid $maincolor;
+            height: 44px;
+            display: flex;
+            transition: all 0.4s;
+            text-transform: uppercase;
+            align-items: center;
+            &:hover {
+                background-color: $maincolor;
+                color: #fff;
+            }
+        }
+        &__login {
+            width: 116px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            height: 44px;
+            font-size: 14px;
+            border: 1px solid $maincolor;
+            font-weight: 500;
+            span {
+                font-size: 24px;
             }
         }
     }
