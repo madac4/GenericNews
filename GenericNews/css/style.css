@@ -405,8 +405,12 @@ label {
 }
 
 form label {
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
+  color: #3C3C3C;
+}
+
+form label span {
+  color: #FF655E;
 }
 
 form input {
@@ -484,6 +488,25 @@ h5 {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 49;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .upper-header__nav {
@@ -751,6 +774,185 @@ h5 {
   content: "";
   position: absolute;
   inset: 0;
+}
+
+.auth-modal {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 990px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.auth-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.auth-modal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+.auth-modal__content {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.auth-modal__content .auth-modal__controls {
+  margin-bottom: 40px;
+}
+
+.auth-modal__content .auth-modal__controls button {
+  font-size: 24px;
+  font-weight: bold;
+  color: #BDBDBD;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.auth-modal__content .auth-modal__controls button:hover {
+  color: #a4a4a4;
+}
+
+.auth-modal__content .auth-modal__controls button.active {
+  color: #3C3C3C;
+}
+
+.auth-modal__content .auth-modal__controls button:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-modal__content .auth-modal__auth {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.auth-modal__content .auth-modal__auth a:hover span {
+  color: #000;
+}
+
+.auth-modal__content .auth-modal__auth a span {
+  font-size: 32px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.auth-modal__content .auth-modal__form {
+  width: 100%;
+  display: none;
+}
+
+.auth-modal__content .auth-modal__form.active {
+  display: block;
+}
+
+.auth-modal__content .auth-modal__form label {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.auth-modal__content .auth-modal__form label .icon-eye {
+  position: absolute;
+  font-size: 20px;
+  top: 45px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.auth-modal__content .auth-modal__form .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.auth-modal__content .auth-modal__form .form-buttons a {
+  font-size: 14px;
+  color: #2C5282;
+}
+
+.auth-modal__content .auth-modal__form .form-buttons button {
+  width: 150px;
+  margin-left: 15px;
+}
+
+.auth-modal__banner {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 70px;
+  max-width: 47%;
+}
+
+.auth-modal__banner button {
+  position: absolute;
+  color: #fff;
+  font-size: 32px;
+  top: 50px;
+  right: 50px;
+}
+
+.auth-modal__banner h5 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.auth-modal__banner ul {
+  padding-left: 20px;
+}
+
+.auth-modal__banner ul li {
+  color: #fff;
+  list-style: disc;
+}
+
+.auth-modal__banner ul li:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 @media (max-width: 1432px) {

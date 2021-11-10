@@ -101,7 +101,80 @@
             <a href="#">Mortal Kombat по-украински: с участием Яроша, Януковича, Путина, Ляшко и других</a>
         </article>
     </div>
+</div> <div class="auth-modal">
+    <div class="auth-modal__body">
+        <div class="auth-modal__content">
+            <div class="auth-modal__controls">
+                <button class="tabs-control active" data-tab="login-form">Logare</button>
+                <button class="tabs-control" data-tab="register-form">Inregistrare</button>
+            </div>
+
+            <div class="auth-modal__auth">
+                Logheaza-te prin:
+                <a href="#"><span class="icon-facebook-rounded"></span></a>
+                <a href="#"><span class="icon-google-rounded"></span></a>
+                <a href="#"><span class="icon-vk-rounded"></span></a>
+                <a href="#"><span class="icon-ok-rounded"></span></a>
+            </div>
+
+            <form action="#" class="auth-modal__form auth-form active" id="login-form">
+                <label for="email">
+                    Email
+                    <input type="text" id="email"  placeholder="Introdu adresa de email">
+                    <small class="error"></small>
+                </label>
+                <label for="password">
+                    Parola
+                    <input type="password" id="password" placeholder="Parola">
+                    <small class="error"></small>
+                    <i class="icon-eye" id="password-toggler"></i>
+                </label>
+
+                <div class="form-buttons">
+                    <a href="#">Ai uitat parola?</a>
+                    <button type="submit" class="button button-danger rounded">Intră în cont</button>
+                </div>
+            </form>
+
+            <form action="#" class="auth-modal__form auth-form" id="register-form">
+                <label for="username">
+                    Username
+                    <input type="text" id="username" placeholder="Username">
+                    <small class="error"></small>
+                </label>
+                <label for="email-register">
+                    Email
+                    <input type="text" id="email-register"  placeholder="Introdu adresa de email">
+                    <small class="error"></small>
+                </label>
+                <label for="password-register">
+                    Parola
+                    <input type="password" id="password-register" placeholder="Parola">
+                    <small class="error"></small>
+                    <i class="icon-eye" id="password-toggler"></i>
+                </label>
+
+                <div class="form-buttons">
+                    <a href="#">Ai uitat parola?</a>
+                    <button type="submit" class="button button-danger rounded">Registrează-te</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="auth-modal__banner" style="background: url('../img/auth-bg.jpg') 50% 50% / cover no-repeat;">
+            <button class="icon-close auth-close"></button>
+            <h5>Intrati, pentru:</h5>
+            <ul>
+                <li>A vă abona și obține acces la conținut unic și restricționat</li>
+                <li>A discuta știri și împărtăși opinii cu alți cititori</li>
+                <li>A salva articolele „pentru mai târziu” și a le citi când veți avea timp</li>
+                <li>A alege ora de primire a corespondenței</li>
+            </ul>
+        </div>
+    </div>
 </div>
+
+    <div class="overlay"></div>
     <script src="js/script.js"></script>
 </body>
 

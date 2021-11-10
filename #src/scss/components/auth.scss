@@ -1,0 +1,127 @@
+.auth-modal {
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 990px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__body {
+        display: flex;
+        height: 700px;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    &__content {
+        display: block;
+        margin: 0 auto;
+        max-width: 350px;
+        width: 100%;
+        padding: 80px 0;
+        .auth-modal__controls {
+            margin-bottom: 40px;
+            button {
+                font-size: 24px;
+                font-weight: bold;
+                color: #BDBDBD;
+                transition: all 0.4s;
+                &:hover {
+                    color: darken(#BDBDBD, 10)
+                }
+                &.active {
+                    color: $maincolor;
+                }
+                &:not(:last-child) {
+                    margin-right: 50px;
+                }
+            }
+        }
+        .auth-modal__auth {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            a {
+                &:hover {
+                    span {
+                        color: #000;
+                    }
+                }
+                span {
+                    font-size: 32px;
+                    transition: all 0.4s;
+                }
+            }
+        }
+        .auth-modal__form {
+            width: 100%;
+            display: none;
+            &.active {
+                display: block;
+            }
+            label {
+                position: relative;
+                margin-bottom: 20px;
+                display: block;
+                .icon-eye {
+                    position: absolute;
+                    font-size: 20px;
+                    top: 45px;
+                    right: 15px;
+                    cursor: pointer;
+                }
+            }
+            .form-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    font-size: 14px;
+                    color: #2C5282;
+                }
+                button {
+                    width: 150px;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    &__banner {
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 70px;
+        max-width: 47%;
+        button {
+            position: absolute;
+            color: #fff;
+            font-size: 32px;
+            top: 50px;
+            right: 50px;
+        }
+        h5 {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+            li {
+                color: #fff;
+                list-style: disc;
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
