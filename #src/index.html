@@ -9,8 +9,63 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-    @@include('./components/header.html') @@include('./components/search.html') @@include('./components/auth.html')
+<body class="color-page">
+    @@include('./components/header.html')
+
+    <main class="main main-page">
+        <div class="page-introduction">
+            <div class="container">
+                <div class="page-introduction__grid">
+                    @@include('./components/news-sidebar.html')
+
+                    <div class="page-introduction__main" style="background: url('img/main-post.jpg') 50% 50% / cover no-repeat;">
+                        <h4>Alegerea redactiei</h4>
+                        <div class="main-article__information">
+                            <a href="#">
+                                <h1>„Mulți cunoscuți de-ai mei consideră că mai bine ar fi avut cancer”</h1>
+                                <small>Virgil Stamm - 15 octombrie</small>
+                            </a>
+                        </div>
+
+                        <div class="main-article__recomandation">
+                            <article class="blog-article main-article__post">
+                                <div class="blog-article__meta">
+                                    <span><i class="icon-calendar"></i>01 octombrie</span>
+                                    <span><i class="icon-views"></i>1024</span>
+                                    <span><i class="icon-comment"></i>14</span>
+                                </div>
+                                <a href="#">
+                                    Vel dolor est. Ullam exercitationem iste sunt sit qui dolorem voluptas quia quia. Ipsum sit voluptate et repudiandae quae. Sit cumque et harum. Placeat omnis mollitia volup.
+                                </a>
+                            </article>
+                            <article class="blog-article main-article__post">
+                                <div class="blog-article__meta">
+                                    <span><i class="icon-calendar"></i>01 octombrie</span>
+                                    <span><i class="icon-views"></i>1024</span>
+                                    <span><i class="icon-comment"></i>14</span>
+                                </div>
+                                <a href="#">
+                                    Vel dolor est. Ullam exercitationem iste sunt sit qui dolorem voluptas quia quia. Ipsum sit voluptate et repudiandae quae. Sit cumque et harum. Placeat omnis mollitia volup.
+                                </a>
+                            </article>
+                            <article class="blog-article main-article__post">
+                                <div class="blog-article__meta">
+                                    <span><i class="icon-calendar"></i>01 octombrie</span>
+                                    <span><i class="icon-views"></i>1024</span>
+                                    <span><i class="icon-comment"></i>14</span>
+                                </div>
+                                <a href="#">
+                                    Vel dolor est. Ullam exercitationem iste sunt sit qui dolorem voluptas quia quia. Ipsum sit voluptate et repudiandae quae. Sit cumque et harum. Placeat omnis mollitia volup.
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./components/search.html') @@include('./components/auth.html')
 
     <div class="overlay"></div>
     <script src="js/script.js"></script>

@@ -14,6 +14,7 @@ const passwordRegister = document.getElementById('password-register')
 const loginForm = document.getElementById('login-form')
 const registerForm = document.getElementById('register-form')
 const passwordToggler = document.getElementById('password-toggler')
+const passwordToggler2 = document.getElementById('password-toggler2')
 
 const authModal = document.querySelector('.auth-modal');
 const authClose = document.querySelector('.auth-close');
@@ -52,6 +53,11 @@ if (passwordToggler) {
     passwordToggler.addEventListener('click', function(e) {
         const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
         password.setAttribute('type', type);
+        this.classList.toggle('icon-eye-slash');
+    });
+    passwordToggler2.addEventListener('click', function(e) {
+        const type = passwordRegister.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordRegister.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
 }
