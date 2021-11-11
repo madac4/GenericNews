@@ -1,3 +1,4 @@
+@@include('slider.js');
 const searchButton = document.querySelector('.header-buttons__search');
 const searchModal = document.querySelector('.search-modal');
 const searchInput = document.getElementById('search');
@@ -37,7 +38,7 @@ if (languageToggler) {
 }
 
 if (searchModal) {
-    searchButton.addEventListener('click', function() {
+    searchButton.addEventListener('click', function () {
         searchModal.classList.add('open');
         setTimeout(() => {
             searchInput.focus()
@@ -50,12 +51,12 @@ if (searchModal) {
 }
 
 if (passwordToggler) {
-    passwordToggler.addEventListener('click', function(e) {
+    passwordToggler.addEventListener('click', function (e) {
         const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
         password.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
-    passwordToggler2.addEventListener('click', function(e) {
+    passwordToggler2.addEventListener('click', function (e) {
         const type = passwordRegister.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordRegister.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');

@@ -40,8 +40,13 @@
     content: "\e904";
 }
 
-.icon-chevron:before {
+.icon-chevron-left:before {
     content: "\e905";
+}
+.icon-chevron-right:before {
+    content: "\e905";
+    display: block;
+    transform: rotate(180deg);
 }
 
 .icon-chevron-duo:before {

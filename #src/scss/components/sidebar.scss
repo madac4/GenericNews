@@ -1,0 +1,81 @@
+.page-sidebar{
+    width: 100%;
+    &__block{
+        background-color: #fff;
+        h4{
+            padding: 20px;
+        }
+        .sidebar-table{}
+    }
+    .sidebar-meteo{
+        .sidebar-table{
+            tr{
+                td{
+                    img{}
+                    small{}
+                    h6{}
+                }
+            }
+        }
+        .sidebar-currency{
+            .sidebar-table{
+                tr{
+                    td{
+                        small{}
+                    }
+                }
+            }
+        }
+
+        .sidebar-top{
+            .page__sidebar-slider {
+                .sidebar-slider__body {
+                    .sidebar-slider__slider {
+                        .slider-sidebar__body {
+                            .slider-sidebar__slide {
+                                .sidebar-slide__meta{
+                                    a{}
+                                    span{}
+                                }
+                                p{}
+                            }
+                        }
+                        .slider-sidebar-controls {
+                            &__dots {
+                                .swiper-pagination-bullet {
+                                    &-active {
+                                    }
+                                }
+                            }
+                            &__arrows {
+                                .slider-arrow {
+                                    &__prev {
+                                    }
+                                    &__next {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar-tags{
+            &__list{
+                li{
+                    &.active{
+                        a{}
+                    }
+                    a{
+
+                    }
+                }
+            }
+        }
+        .sidebar-contact{
+            h5{}
+            img{}
+        }
+    }
+}
