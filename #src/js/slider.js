@@ -118,18 +118,16 @@ let sliderTemplate = new Swiper('.slider', {
 
 if (document.querySelector('.slider-sidebar__body')) {
     new Swiper('.slider-sidebar__body', {
-        effect: 'fade',
         autoplay: {
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
-
         },
         observer: true,
         observeParents: true,
         slidesPerView: 1,
         spaceBetween: 0,
-        autoHeight: true,
         speed: 800,
+        crossFade: true,
         lazy: true,
         pagination: {
             el: '.slider-sidebar-controls__dots',

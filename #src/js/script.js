@@ -25,6 +25,9 @@ const authModalControls = document.querySelector('.auth-modal__controls');
 const authTabsControl = document.querySelectorAll('.auth-modal__controls .tabs-control');
 const authTabsForm = document.querySelectorAll('.auth-form');
 
+const header = document.querySelector('.header')
+const upperHeader = document.querySelector('.upper-header')
+
 if (languageToggler) {
     languageToggler.addEventListener('click', () => {
         if (languageToggler.getAttribute('data-language') === 'ro') {
@@ -40,6 +43,8 @@ if (languageToggler) {
 if (searchModal) {
     searchButton.addEventListener('click', function () {
         searchModal.classList.add('open');
+        document.body.classList.add('lock');
+        document.body.style.marginRight = '17px';
         setTimeout(() => {
             searchInput.focus()
         }, 50);
@@ -47,6 +52,8 @@ if (searchModal) {
 
     searchClose.addEventListener('click', () => {
         searchModal.classList.remove('open');
+        document.body.classList.remove('lock');
+        document.body.style.marginRight = null;
     })
 }
 
@@ -141,9 +148,29 @@ if (authModal) {
     authOpen.addEventListener("click", () => {
         authModal.classList.add('open');
         overlay.classList.add('open');
+        document.body.classList.add('lock');
+        document.body.style.marginRight = '17px';
     })
     authClose.addEventListener('click', () => {
         authModal.classList.remove('open');
         overlay.classList.remove('open');
+        setInterval(() => {
+            document.body.classList.remove('lock');
+            document.body.style.marginRight = null;
+        }, 50);
+    })
+}
+
+if (header) {
+    window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY;
+        const headerHeight = header.offsetHeight;
+        const upperHeaderHeight = upperHeader.offsetHeight;
+
+        if (scrollPos > upperHeaderHeight + headerHeight) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
     })
 }

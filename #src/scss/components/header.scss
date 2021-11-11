@@ -32,6 +32,72 @@
 }
 
 .header {
+    &.sticky{
+        position: sticky;
+        top: 0;
+        background-color: $accentcolor;
+        animation: stickyHeader .4s;
+        z-index: 3;
+        .header-container{
+            background-color: transparent;
+            border: none;
+            .header-logo{
+                display: none;
+                &--sticky{
+                    display: block;
+                }
+            }
+            .header-menu {
+                &__list {
+                    li {
+                        &.active {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                        a {
+                            color: #fff;
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-buttons {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &__search {
+                    border: 1px solid #fff;
+                    color: #fff;
+                    &:hover {
+                        background-color: #fff;
+                        color: $maincolor;
+                    }
+                }
+                &__language {
+                    border: 1px solid #fff;
+                    color: #fff;
+                    &:hover {
+                        background-color: #fff;
+                        color: $maincolor;
+                    }
+                }
+                &__login {
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    color: $maincolor;
+                    &:hover {
+                        background-color: $maincolor;
+                        color: #fff;
+                        border: 1px solid $maincolor;
+                    }
+                }
+            }
+
+        }
+    }
     &-container {
         display: flex;
         align-items: center;
@@ -40,14 +106,26 @@
         padding: 20px;
         gap: 60px;
         @media(max-width: $md1) {
-            gap: 30px;
+            gap: 20px;
         }
     }
     &-logo {
+        &--sticky{
+            display: none;
+            h2{
+                font-family: 'RobotoSlab';
+                a{
+                    color: #fff;
+                }
+            }
+        }
         a {
             img {
                 width: 230px;
                 height: auto;
+                @media (max-width: $md2) {
+                     width: 200px;    
+                }
             }
         }
     }
@@ -118,12 +196,30 @@
             justify-content: center;
             gap: 5px;
             height: 44px;
-            font-size: 14px;
             border: 1px solid $maincolor;
-            font-weight: 500;
-            span {
+            @media (max-width: $md2) {
+                width: auto;
+                padding: 0 12px;
+           }
+            .icon-person {
                 font-size: 24px;
             }
+            .login-text{
+                font-size: 14px;
+                font-weight: 500;
+                @media (max-width: $md2) {
+                    display: none;
+               }
+            }
         }
+    }
+}
+
+@keyframes stickyHeader {
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(-0);
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +29,9 @@
         <div class="header-logo">
             <a href="/"><img src="../img/logo.png" alt="logo"></a>
         </div>
+        <div class="header-logo header-logo--sticky">
+            <h2><a href="#">GENERIC.MD</a></h2>
+        </div>
 
         <nav class="header-menu">
             <ul class="header-menu__list">
@@ -45,10 +48,14 @@
         <div class="header-buttons">
             <button class="header-buttons__search icon-search"></button>
             <button class="language-toggler header-buttons__language" data-language="ro">RO</button>
-            <button class="header-buttons__login button button-dark"><span class="icon-person"></span>Logare</button>
+            <button class="header-buttons__login button button-dark">
+                <span class="icon-person"></span>
+                <span class="login-text">Logare</span>
+            </button>
         </div>
     </div>
 </header>
+
 
     <main class="main main-page">
         <div class="page-introduction">
@@ -59,7 +66,7 @@
 
     <ul class="popular-articles__list">
         <li class="popular-articles__item">
-            <article class="blog-article popular-article__post">
+            <div class="blog-article popular-article__post">
                 <div class="blog-article__meta">
                     <time>12:32</time>
                     <span>/</span>
@@ -68,10 +75,10 @@
                 <a href="#" class="blog-article__title">
                     După 3 ani la cârma Metalferos, Igor Cujbă își anunță demisia: „A fost un mandat dificil”
                 </a>
-            </article>
+            </div>
         </li>
         <li class="popular-articles__item">
-            <article class="blog-article popular-article__post">
+            <div class="blog-article popular-article__post">
                 <div class="blog-article__meta">
                     <time>12:20</time>
                     <span>/</span>
@@ -79,65 +86,72 @@
                 </div>
                 <a href="#" class="blog-article__title">
                     <strong>
-                        Nobis voluptatem dolore doloribus sint repudiandae ipsum consequuntur alias nemo. Ut eum adipisci. Rem similique consequatur voluptas.
+                        Nobis voluptatem dolore doloribus sint repudiandae ipsum consequuntur alias nemo. Ut eum
+                        adipisci. Rem similique consequatur voluptas.
                     </strong>
                 </a>
-            </article>
+            </div>
         </li>
         <li class="popular-articles__item">
-            <article class="blog-article popular-article__post">
+            <div class="blog-article popular-article__post">
                 <div class="blog-article__meta">
                     <time>11:40</time>
                     <span>/</span>
                     <a href="#" class="blog-article__category">Ecomonic</a>
                 </div>
                 <a href="#" class="blog-article__title">
-                    Pariatur et et sapiente velit ullam iste voluptas. Error fugiat minus. Autem illo distinctio et nisi. Quia ipsam qui reiciendis saepe. Ullam et aut dolorem consequatur mollitia iure possimus labore ipsam.
+                    Pariatur et et sapiente velit ullam iste voluptas. Error fugiat minus. Autem illo distinctio et
+                    nisi. Quia ipsam qui reiciendis saepe. Ullam et aut dolorem consequatur mollitia iure possimus
+                    labore ipsam.
                 </a>
-            </article>
+            </div>
         </li>
         <li class="popular-articles__item">
-            <article class="blog-article popular-article__post">
+            <div class="blog-article popular-article__post">
                 <div class="blog-article__meta">
                     <time>09:14</time>
                     <span>/</span>
                     <a href="#" class="blog-article__category">Cultură</a>
                 </div>
                 <a href="#" class="blog-article__title">
-                    <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto deserunt. Eos eaque maiores. Excepturi et blanditiis explicabo autem eos.
+                    <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto deserunt. Eos eaque
+                    maiores. Excepturi et blanditiis explicabo autem eos.
                 </a>
-            </article>
+            </div>
         </li>
         <li class="popular-articles__item">
-            <article class="blog-article popular-article__post">
+            <div class="blog-article popular-article__post">
                 <div class="blog-article__meta">
                     <time>08:50</time>
                     <span>/</span>
                     <a href="#" class="blog-article__category">COVID</a>
                 </div>
                 <a href="#" class="blog-article__title">
-                    Odio quaerat et sit dolores possimus eos fuga mollitia. Aut labore accusantium temporibus. Aut autem doloremque quo dolorem delectus ea. Voluptatum atque qui eius.
+                    Odio quaerat et sit dolores possimus eos fuga mollitia. Aut labore accusantium temporibus. Aut autem
+                    doloremque quo dolorem delectus ea. Voluptatum atque qui eius.
                 </a>
-            </article>
+            </div>
         </li>
         <li class="popular-articles__item">
-            <article class="blog-article popular-article__post">
+            <div class="blog-article popular-article__post">
                 <div class="blog-article__meta">
                     <time>08:50</time>
                     <span>/</span>
                     <a href="#" class="blog-article__category">COVID</a>
                 </div>
                 <a href="#" class="blog-article__title">
-                    Odio quaerat et sit dolores possimus eos fuga mollitia. Aut labore accusantium temporibus. Aut autem doloremque quo dolorem delectus ea. Voluptatum atque qui eius.
+                    Odio quaerat et sit dolores possimus eos fuga mollitia. Aut labore accusantium temporibus. Aut autem
+                    doloremque quo dolorem delectus ea. Voluptatum atque qui eius.
                 </a>
-            </article>
+            </div>
         </li>
     </ul>
 
-    <div class="popular-articles__more">
+    <div class="popular-articles__more articles-more">
         <a href="#">Vezi toate stirile <span class="icon-chevron-duo"></span></a>
     </div>
 </aside>
+
 
                     <div class="page-introduction__main"
                         style="background: url('img/main-post.jpg') 50% 50% / cover no-repeat;">
@@ -150,8 +164,8 @@
                         </div>
 
                         <div class="main-article__recomandation">
-                            <article class="blog-article main-article__post">
-                                <div class="blog-article__meta">
+                            <div class="blog-article main-article__post">
+                                <div class="blog-article__meta recomandation-meta">
                                     <span><i class="icon-calendar"></i>01 octombrie</span>
                                     <span><i class="icon-views"></i>1024</span>
                                     <span><i class="icon-comment"></i>14</span>
@@ -161,9 +175,9 @@
                                     Ipsum sit voluptate et repudiandae quae. Sit cumque et harum. Placeat omnis mollitia
                                     volup.
                                 </a>
-                            </article>
-                            <article class="blog-article main-article__post">
-                                <div class="blog-article__meta">
+                            </div>
+                            <div class="blog-article main-article__post">
+                                <div class="blog-article__meta recomandation-meta">
                                     <span><i class="icon-calendar"></i>01 octombrie</span>
                                     <span><i class="icon-views"></i>1024</span>
                                     <span><i class="icon-comment"></i>14</span>
@@ -173,9 +187,9 @@
                                     Ipsum sit voluptate et repudiandae quae. Sit cumque et harum. Placeat omnis mollitia
                                     volup.
                                 </a>
-                            </article>
-                            <article class="blog-article main-article__post">
-                                <div class="blog-article__meta">
+                            </div>
+                            <div class="blog-article main-article__post">
+                                <div class="blog-article__meta recomandation-meta">
                                     <span><i class="icon-calendar"></i>01 octombrie</span>
                                     <span><i class="icon-views"></i>1024</span>
                                     <span><i class="icon-comment"></i>14</span>
@@ -185,14 +199,350 @@
                                     Ipsum sit voluptate et repudiandae quae. Sit cumque et harum. Placeat omnis mollitia
                                     volup.
                                 </a>
-                            </article>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="content">
+            <div class="container content-container">
+                <div class="content-container__body">
+                    <div class="recomandation-articles content-body__item">
+                        <section class="blog-article category-recomandation">
+                            <h4>Politic</h4>
+                            <div class="category-recomandation__main"
+                                style="background: url('img/category-recomandation1.jpg') 50% 50% / cover no-repeat;">
+                                <h5>
+                                    „Să arzi rezerva de stat înainte de sosirea iernii este o diversiune împotriva țării
+                                    și
+                                    a oamenilor”.
+                                </h5>
+                                <div class="recomandation-meta">
+                                    <span><i class="icon-calendar"></i>19 octombrie</span>
+                                    <span><i class="icon-views"></i>450</span>
+                                    <span><i class="icon-comment"></i>8</span>
+                                </div>
+                            </div>
+
+                            <div class="category-recomandation__subpost">
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                    </p>
+                                </div>
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                    </p>
+                                </div>
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="articles-more">
+                                <a href="#">Vezi toate stirile <span class="icon-chevron-duo"></span></a>
+                            </div>
+                        </section>
+
+                        <section class="blog-article category-recomandation">
+                            <h4>Social</h4>
+                            <div class="category-recomandation__main"
+                                style="background: url('img/category-recomandation2.jpg') 50% 50% / cover no-repeat;">
+                                <h5>
+                                    „Să arzi rezerva de stat înainte de sosirea iernii este o diversiune împotriva țării
+                                    și
+                                    a oamenilor”.
+                                </h5>
+                                <div class="recomandation-meta">
+                                    <span><i class="icon-calendar"></i>19 octombrie</span>
+                                    <span><i class="icon-views"></i>450</span>
+                                    <span><i class="icon-comment"></i>8</span>
+                                </div>
+                            </div>
+
+                            <div class="category-recomandation__subpost">
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        Eos eaque maiores. Excepturi et blanditiis explicabo.
+                                    </p>
+                                </div>
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        Eos eaque maiores. Excepturi et blanditiis explicabo.
+                                    </p>
+                                </div>
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        Eos eaque maiores. Excepturi et blanditiis explicabo.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="articles-more">
+                                <a href="#">Vezi toate stirile <span class="icon-chevron-duo"></span></a>
+                            </div>
+                        </section>
+
+                        <section class="blog-article category-recomandation">
+                            <h4>Economic</h4>
+                            <div class="category-recomandation__main"
+                                style="background: url('img/category-recomandation3.jpg') 50% 50% / cover no-repeat;">
+                                <h5>
+                                    „Să arzi rezerva de stat înainte de sosirea iernii este o diversiune împotriva țării
+                                    și
+                                    a oamenilor”.
+                                </h5>
+                                <div class="recomandation-meta">
+                                    <span><i class="icon-calendar"></i>19 octombrie</span>
+                                    <span><i class="icon-views"></i>450</span>
+                                    <span><i class="icon-comment"></i>8</span>
+                                </div>
+                            </div>
+
+                            <div class="category-recomandation__subpost">
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        Eos eaque maiores. Excepturi et blanditiis explicabo.
+                                    </p>
+                                </div>
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        Eos eaque maiores. Excepturi et blanditiis explicabo.
+                                    </p>
+                                </div>
+                                <div class="blog-recomandation">
+                                    <span>19 octombrie</span>
+                                    <p>
+                                        <strong>Et unde eum maxime.</strong> Quia magni dolore doloribus debitis iusto
+                                        deserunt.
+                                        Eos eaque maiores. Excepturi et blanditiis explicabo.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="articles-more">
+                                <a href="#">Vezi toate stirile <span class="icon-chevron-duo"></span></a>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="blog-main content-body__item">
+
+                    </div>
+                    <div class="subscribe content-body__item">
+                        <h4>Quod vel provident voluptas amet alias consequatur nulla molestiae aspernatur.</h4>
+                        <a class="button button-light" href="#">Abonează-te <span class="icon-long-arrow"></span></a>
+                    </div>
+                </div>
+                <aside class="sidebar page-sidebar">
+    <div class="page-sidebar__block sidebar-meteo">
+        <h4>Prognoza Meteo</h4>
+        <table class="sidebar-table">
+            <tr>
+                <th>06:00</th>
+                <th><img src="../img/mostly-cloudy.svg" alt="mostly cloudy"></th>
+                <th><small>Cer noros,<br> fără precipitații</small></th>
+                <th>
+                    <strong>+5°</strong>
+                </th>
+            </tr>
+            <tr>
+                <th>06:00</th>
+                <th><img src="../img/cloudy.svg" alt="mostly cloudy"></th>
+                <th><small>Parțial noros,<br>fără precipitații</small></th>
+                <th>
+                    <strong>+12°</strong>
+                </th>
+            </tr>
+            <tr>
+                <th>06:00</th>
+                <th><img src="../img/showers.svg" alt="mostly cloudy"></th>
+                <th><small>Ploaie moderată</small></th>
+                <th>
+                    <strong>+11°</strong>
+                </th>
+            </tr>
+            <tr>
+                <th>06:00</th>
+                <th><img src="../img/sunny.svg" alt="mostly cloudy"></th>
+                <th><small>Senin,<br> fără precipitații</small></th>
+                <th>
+                    <strong>+8°</strong>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="page-sidebar__block sidebar-currency">
+        <h4>Curs valutar</h4>
+        <table class="sidebar-table">
+            <tr>
+                <th><span><img src="../img/icons/usa.svg" alt="usa"> USD</span></th>
+                <th><small>17,3742 MDL</small></th>
+                <th><small>-0,0051<img src="../img/icons/caret_down.svg" alt="down"></small></th>
+            </tr>
+            <tr>
+                <th><span><img src="../img/icons/eu.svg" alt="eu"> EUR</span></th>
+                <th><small>20,2419 MDL</small></th>
+                <th><small>+0,0294<img src="../img/icons/caret_up.svg" alt="up"></small></th>
+            </tr>
+            <tr>
+                <th><span><img src="../img/icons/rus.svg" alt="rus"> RUB</span></th>
+                <th><small>0,2419 MDL</small></th>
+                <th><small>-0,0006 <img src="../img/icons/caret_down.svg" alt="down"></small></th>
+            </tr>
+            <tr>
+                <th><span><img src="../img/icons/rom.svg" alt="rom"> RON</span></th>
+                <th><small>4,0552 MDL</small></th>
+                <th><small>-0,0058 <img src="../img/icons/caret_down.svg" alt="down"></small></th>
+            </tr>
+            <tr>
+                <th><span><img src="../img/icons/ukr.svg" alt="ukr"> UAH</span></th>
+                <th><small>0,6594 MDL</small></th>
+                <th><small>-0,0001 <img src="../img/icons/caret_down.svg" alt="down"></small></th>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="page-sidebar__block sidebar-top">
+        <h4>Topuri</h4>
+        <div class="page__sidebar-slider sidebar-slider">
+            <div class="sidebar-slider__body">
+                <div class="sidebar-slider__slider">
+                    <div class="slider-sidebar__body swiper">
+                        <div class="slider-sidebar__slide">
+                            <div class="sidebar-slide__meta"
+                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
+                                <a href="#">Social</a>
+                                <span>/</span>
+                                <a href="#">Poze</a>
+                            </div>
+                            <p>20 de locuri autentice ce merită vizitate într-un city break la Chișinău</p>
+                        </div>
+                        <div class="slider-sidebar__slide">
+                            <div class="sidebar-slide__meta"
+                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
+                                <a href="#">Social</a>
+                                <span>/</span>
+                                <a href="#">Poze</a>
+                            </div>
+                            <p>20 de locuri autentice ce merită vizitate într-un city break la Chișinău</p>
+                        </div>
+                        <div class="slider-sidebar__slide">
+                            <div class="sidebar-slide__meta"
+                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
+                                <a href="#">Politica</a>
+                                <span>/</span>
+                                <a href="#">Poze</a>
+                            </div>
+                            <p>
+                                20 de locuri autentice ce merită vizitate într-un city break la Chișinău Lorem, ipsum.
+                            </p>
+                        </div>
+                        <div class="slider-sidebar__slide">
+                            <div class="sidebar-slide__meta"
+                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
+                                <a href="#">Economie</a>
+                                <span>/</span>
+                                <a href="#">Poze</a>
+                            </div>
+                            <p>
+                                20 de locuri autentice ce merită vizitate într-un city break la Chișinău Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Praesentium, obcaecati.
+                            </p>
+                        </div>
+                        <div class="slider-sidebar__slide">
+                            <div class="sidebar-slide__meta"
+                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
+                                <a href="#">Cultura</a>
+                                <span>/</span>
+                                <a href="#">Poze</a>
+                            </div>
+                            <p>
+                                20 de locuri autentice ce merită vizitate într-un city break la Chișinău Lorem, ipsum
+                                dolor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slider-sidebar-controls">
+                        <div class="slider-sidebar-controls__arrows slider-arrows">
+                            <button type="button" class="slider-arrow slider-arrow__prev icon-chevron-left"></button>
+                            <div class="slider-sidebar-controls__dots"></div>
+                            <button type="button" class="slider-arrow slider-arrow__next icon-chevron-right"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-sidebar__block sidebar-tags">
+        <h4>Tag-uri populare</h4>
+        <ul class="sidebar-tags__list">
+            <li><a href="#">#Maia Sandu</a></li>
+            <li><a href="#">#COVID</a></li>
+            <li><a href="#">#Chisinau</a></li>
+            <li><a href="#">#UTA</a></li>
+            <li><a href="#">#Vaccin</a></li>
+            <li><a href="#">#Afganistan</a></li>
+            <li><a href="#">#Maia Sandu</a></li>
+            <li><a href="#">#COVID</a></li>
+            <li><a href="#">#Primarie</a></li>
+            <li><a href="#">#UTA</a></li>
+            <li><a href="#">#Vaccin</a></li>
+            <li><a href="#">#Afganistan</a></li>
+            <li><a href="#">#Gavril</a></li>
+            <li><a href="#">#Maia Sandu</a></li>
+            <li><a href="#">#COVID</a></li>
+            <li><a href="#">#Chisinau</a></li>
+            <li><a href="#">#UTA</a></li>
+            <li><a href="#">#Vaccin</a></li>
+            <li><a href="#">#Afganistan</a></li>
+            <li><a href="#">#Maia Sandu</a></li>
+            <li><a href="#">#COVID</a></li>
+        </ul>
+    </div>
+
+    <div class="page-sidebar__block sidebar-contact">
+        <h5>Ai o noutate? Scrie-ne!</h5>
+        <img src="../img/icons/sidebar-contacts.svg" alt="contact">
+    </div>
+</aside>
+
+            </div>
+        </div>
     </main>
 
+
+    <div class="overlay"></div>
     <div class="search-modal">
     <div class="search-modal__header">
         <h1>Cautare</h1>
@@ -205,48 +555,53 @@
     </form>
 
     <div class="search-modal__grid">
-        <article class="search-modal__result">
+        <div class="search-modal__result">
             <img src="../img/search-result0.jpg" alt="article">
-            <a href="#">Постправда о постправде: в российском переводе книги Юваля Харари главу про Путина и Крым заменили Трампом. Автор утвердил правки</a>
-        </article>
-        <article class="search-modal__result">
+            <a href="#">Постправда о постправде: в российском переводе книги Юваля Харари главу про Путина и Крым
+                заменили Трампом. Автор утвердил правки</a>
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result1.jpg" alt="article">
             <a href="#">“ПриватБанк” подарит iPhone каждому, кто откажется от фамилий Путин, Сталин и других</a>
-        </article>
-        <article class="search-modal__result">
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result2.jpg" alt="article">
-            <a href="#">Залечь на дно в Ницце – интервью со сбежавшим от власти Путина российским бизнесменом Виталием Архангельским</a>
-        </article>
-        <article class="search-modal__result">
+            <a href="#">Залечь на дно в Ницце – интервью со сбежавшим от власти Путина российским бизнесменом Виталием
+                Архангельским</a>
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result3.jpg" alt="article">
             <a href="#">Холодный прием Путина и почему молчит Кернес: что украинцы искали в интернете на этой неделе</a>
-        </article>
-        <article class="search-modal__result">
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result4.jpg" alt="article">
             <a href="#">Как действия Путина в Украине убивают российскую стартап-культуру</a>
-        </article>
-        <article class="search-modal__result">
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result5.jpg" alt="article">
-            <a href="#">«Наследницу» S.T.A.L.K.E.R. от украинской гейм-студии West Games забанили на Kickstarter после “письма от Путина”</a>
-        </article>
-        <article class="search-modal__result">
+            <a href="#">«Наследницу» S.T.A.L.K.E.R. от украинской гейм-студии West Games забанили на Kickstarter после
+                “письма от Путина”</a>
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result6.jpg" alt="article">
-            <a href="#">Максимальный репост: звезда для Путина, часовой пояс “Россия” и новые приключения Елены Бондаренко</a>
-        </article>
-        <article class="search-modal__result">
+            <a href="#">Максимальный репост: звезда для Путина, часовой пояс “Россия” и новые приключения Елены
+                Бондаренко</a>
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result7.jpg" alt="article">
             <a href="#">Статья “Путин-х***ло” стала самой популярной в украинской “Википедии”</a>
-        </article>
-        <article class="search-modal__result">
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result8.jpg" alt="article">
             <a href="#">Культ личности: итальянские ювелиры выпустили золотые iPhone с портретом Путина</a>
-        </article>
-        <article class="search-modal__result">
+        </div>
+        <div class="search-modal__result">
             <img src="../img/search-result9.jpg" alt="article">
             <a href="#">Mortal Kombat по-украински: с участием Яроша, Януковича, Путина, Ляшко и других</a>
-        </article>
+        </div>
     </div>
 </div>
+
     <div class="auth-modal">
     <div class="auth-modal__body">
         <div class="auth-modal__content">
@@ -319,181 +674,6 @@
         </div>
     </div>
 </div>
-    <aside class="sidebar page-sidebar">
-    <div class="page-sidebar__block sidebar-meteo">
-        <h4>Prognoza Meteo</h4>
-        <table class="sidebar-table">
-            <tr>
-                <td>06:00</td>
-                <td><img src="../img/mostly-cloudy.svg" alt="mostly cloudy"></td>
-                <td><small>Cer noros, fără precipitații</small></td>
-                <td>
-                    <h6>+5°</h6>
-                </td>
-            </tr>
-            <tr>
-                <td>06:00</td>
-                <td><img src="../img/mostly-cloudy.svg" alt="mostly cloudy"></td>
-                <td><small>Cer noros, fără precipitații</small></td>
-                <td>
-                    <h6>+12°</h6>
-                </td>
-            </tr>
-            <tr>
-                <td>06:00</td>
-                <td><img src="../img/mostly-cloudy.svg" alt="mostly cloudy"></td>
-                <td><small>Cer noros, fără precipitații</small></td>
-                <td>
-                    <h6>+11°</h6>
-                </td>
-            </tr>
-            <tr>
-                <td>06:00</td>
-                <td><img src="../img/mostly-cloudy.svg" alt="mostly cloudy"></td>
-                <td><small>Cer noros, fără precipitații</small></td>
-                <td>
-                    <h6>+8°</h6>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="page-sidebar__block sidebar-currency">
-        <h4>Curs valutar</h4>
-        <table class="sidebar-table">
-            <tr>
-                <td><img src="../img/icons/usa.svg" alt="usa"> USD</td>
-                <td><small>17,3742 MDL</small></td>
-                <td><small>-0,0051</small><img src="../img/icons/caret_down.svg" alt="down"></td>
-            </tr>
-            <tr>
-                <td><img src="../img/icons/eu.svg" alt="eu"> EUR</td>
-                <td><small>20,2419 MDL</small></td>
-                <td><small>+0,0294</small><img src="../img/icons/caret_up.svg" alt="up"></td>
-            </tr>
-            <tr>
-                <td><img src="../img/icons/rus.svg" alt="rus"> RUB</td>
-                <td><small>0,2419 MDL</small></td>
-                <td><small>-0,0006</small><img src="../img/icons/caret_down.svg" alt="down"></td>
-            </tr>
-            <tr>
-                <td><img src="../img/icons/rom.svg" alt="rom"> RON</td>
-                <td><small>4,0552 MDL</small></td>
-                <td><small>-0,0058</small><img src="../img/icons/caret_down.svg" alt="down"></td>
-            </tr>
-            <tr>
-                <td><img src="../img/icons/ukr.svg" alt="ukr"> UAH</td>
-                <td><small>0,6594 MDL</small></td>
-                <td><small>-0,0001 </small><img src="../img/icons/caret_down.svg" alt="down"></td>
-            </tr>
-
-        </table>
-    </div>
-
-    <div class="page-sidebar__block sidebar-top">
-        <h4>Topuri</h4>
-        <div class="page__sidebar-slider sidebar-slider">
-            <div class="sidebar-slider__body">
-                <div class="sidebar-slider__slider">
-                    <div class="slider-sidebar__body swiper">
-                        <div class="slider-sidebar__slide">
-                            <div class="sidebar-slide__meta"
-                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
-                                <a href="#">Social</a>
-                                <span>/</span>
-                                <a href="#">Poze</a>
-                            </div>
-                            <p>20 de locuri autentice ce merită vizitate într-un city break la Chișinău</p>
-                        </div>
-                        <div class="slider-sidebar__slide">
-                            <div class="sidebar-slide__meta"
-                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
-                                <a href="#">Social</a>
-                                <span>/</span>
-                                <a href="#">Poze</a>
-                            </div>
-                            <p>20 de locuri autentice ce merită vizitate într-un city break la Chișinău</p>
-                        </div>
-                        <div class="slider-sidebar__slide">
-                            <div class="sidebar-slide__meta"
-                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
-                                <a href="#">Politica</a>
-                                <span>/</span>
-                                <a href="#">Poze</a>
-                            </div>
-                            <p>
-                                20 de locuri autentice ce merită vizitate într-un city break la Chișinău Lorem, ipsum.
-                            </p>
-                        </div>
-                        <div class="slider-sidebar__slide">
-                            <div class="sidebar-slide__meta"
-                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
-                                <a href="#">Economie</a>
-                                <span>/</span>
-                                <a href="#">Poze</a>
-                            </div>
-                            <p>20 de locuri autentice ce merită vizitate într-un city break la Chișinău Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Praesentium, obcaecati.</p>
-                        </div>
-                        <div class="slider-sidebar__slide">
-                            <div class="sidebar-slide__meta"
-                                style="background: url('../img/sidebar-slide1.jpg') 50% 50% / cover no-repeat;">
-                                <a href="#">Cultura</a>
-                                <span>/</span>
-                                <a href="#">Poze</a>
-                            </div>
-                            <p>20 de locuri autentice ce merită vizitate într-un city break la Chișinău Lorem, ipsum
-                                dolor.</p>
-                        </div>
-                    </div>
-
-                    <div class="slider-sidebar-controls">
-                        <div class="slider-sidebar-controls__arrows slider-arrows">
-                            <button type="button" class="slider-arrow slider-arrow__prev icon-chevron-left"></button>
-                            <div class="slider-sidebar-controls__dots"></div>
-                            <button type="button" class="slider-arrow slider-arrow__next icon-chevron-right"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="page-sidebar__block sidebar-tags">
-        <h4>Tag-uri populare</h4>
-        <ul class="sidebar-tags__list">
-            <li><a href="#">#Maia Sandu</a></li>
-            <li><a href="#">#COVID</a></li>
-            <li><a href="#">#Chisinau</a></li>
-            <li><a href="#">#UTA</a></li>
-            <li class="active"><a href="#">#Vaccin</a></li>
-            <li><a href="#">#Afganistan</a></li>
-            <li><a href="#">#Maia Sandu</a></li>
-            <li><a href="#">#COVID</a></li>
-            <li><a href="#">#Primarie</a></li>
-            <li><a href="#">#UTA</a></li>
-            <li><a href="#">#Vaccin</a></li>
-            <li><a href="#">#Afganistan</a></li>
-            <li><a href="#">#Gavril</a></li>
-            <li><a href="#">#Maia Sandu</a></li>
-            <li><a href="#">#COVID</a></li>
-            <li><a href="#">#Chisinau</a></li>
-            <li><a href="#">#UTA</a></li>
-            <li><a href="#">#Vaccin</a></li>
-            <li><a href="#">#Afganistan</a></li>
-            <li><a href="#">#Maia Sandu</a></li>
-            <li><a href="#">#COVID</a></li>
-        </ul>
-    </div>
-
-    <div class="page-sidebar__block sidebar-contact">
-        <h5>Ai o noutate? Scrie-ne!</h5>
-        <img src="../img/icons/sidebar-contacts.svg" alt="contact">
-    </div>
-</aside>
-
-
-    <div class="overlay"></div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

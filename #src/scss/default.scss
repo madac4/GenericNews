@@ -42,7 +42,7 @@ body {
     margin: 0 auto;
     width: 100%;
     @media (max-width: $md1) {
-        max-width: 1200px;
+        max-width: 1120px;
     }
     @media (max-width: $md2) {
         max-width: 970px;
@@ -99,4 +99,8 @@ input,
 textarea,
 label {
     font-family: inherit;
+}
+
+table{
+    border-collapse: collapse;
 }
