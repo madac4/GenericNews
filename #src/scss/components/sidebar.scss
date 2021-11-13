@@ -16,7 +16,7 @@
                 border: 1px solid $linecolor;
                 font-weight: normal;
                 padding: 10px 0;
-                font-size: 14px;
+                
                 small, span{
                     display: flex;
                     justify-content: center;
@@ -40,7 +40,7 @@
                     }
                     strong{
                         font-weight: 600;
-                        font-size: 14px;
+                        
                         color: $maincolor;   
                     }
                 }
@@ -68,6 +68,19 @@
         }
     }
 
+    .sidebar-ads{
+        display: none;
+        a{
+            display: block;
+            border-top: 1px solid $linecolor;
+            padding: 20px 0;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
     .sidebar-top{
         padding-bottom: 20px;
         .page__sidebar-slider {
@@ -84,7 +97,7 @@
                                 a{
                                     font-family: 'RobotoSlab';
                                     font-weight: 500;
-                                    font-size: 14px;
+                                    
                                     color: #FFFFFF;
                                 }
                                 span{
@@ -96,7 +109,7 @@
                             }
                             p{
                                 margin: 20px;
-                                font-size: 14px;
+                                
                                 line-height: 140%;
                             }
                         }
@@ -140,7 +153,7 @@
     }
 
     .sidebar-tags{
-        background-color: $maincolor;
+        background-color: $bgcolor;
         padding-bottom: 20px;
         h4{
             color: #fff;

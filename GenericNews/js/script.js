@@ -204,7 +204,6 @@ if (searchModal) {
     searchButton.addEventListener('click', function () {
         searchModal.classList.add('open');
         document.body.classList.add('lock');
-        document.body.style.marginRight = '17px';
         setTimeout(() => {
             searchInput.focus()
         }, 50);
@@ -213,7 +212,6 @@ if (searchModal) {
     searchClose.addEventListener('click', () => {
         searchModal.classList.remove('open');
         document.body.classList.remove('lock');
-        document.body.style.marginRight = null;
     })
 }
 
@@ -309,15 +307,11 @@ if (authModal) {
         authModal.classList.add('open');
         overlay.classList.add('open');
         document.body.classList.add('lock');
-        document.body.style.marginRight = '17px';
     })
     authClose.addEventListener('click', () => {
         authModal.classList.remove('open');
         overlay.classList.remove('open');
-        setInterval(() => {
-            document.body.classList.remove('lock');
-            document.body.style.marginRight = null;
-        }, 50);
+        document.body.classList.remove('lock');
     })
 }
 

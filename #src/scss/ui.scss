@@ -32,7 +32,7 @@
         padding: 13px 0;
         color: #fff;
         font-weight: 500;
-        font-size: 14px;
+        
         &:hover {
             background-color: lighten($bgcolor, 7);
         }
@@ -104,7 +104,7 @@ form {
         transition: all 0.4s;
         outline: none;
         padding: 16px 20px;
-        font-size: 14px;
+        
         &:focus {
             border-color: $maincolor;
         }

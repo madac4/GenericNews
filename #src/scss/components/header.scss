@@ -147,7 +147,7 @@
                 }
                 a {
                     font-weight: 500;
-                    font-size: 14px;
+                    
                     text-transform: uppercase;
                     transition: all 0.4s;
                     &:hover {
@@ -176,7 +176,7 @@
         }
         &__language {
             font-weight: 500;
-            font-size: 14px;
+            
             padding: 0 12px;
             border: 1px solid $maincolor;
             height: 44px;
@@ -205,7 +205,7 @@
                 font-size: 24px;
             }
             .login-text{
-                font-size: 14px;
+                
                 font-weight: 500;
                 @media (max-width: $md2) {
                     display: none;
