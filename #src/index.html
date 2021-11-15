@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage - Generic News</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -227,193 +228,238 @@
                     <div class="blog-main content-body__item">
                         <h4>Principalele stiri</h4>
 
-                        <article class="blog-article blog-article__post">
-                            <img src="img/home-post1.jpg" alt="article" />
+                        <div class="blog-main__post">
+                            <article class="blog-article blog-article__post">
+                                <img src="img/home-post1.jpg" alt="article" />
 
-                            <div class="blog-article__content">
-                                <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit în
-                                    Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
-                                <a href="#" class="blog-article__description">
-                                    Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
-                                    convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum dui
-                                    vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras sit
-                                    amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
-                                    eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis sem,
-                                    dignissim ut enim vel, dignissim feugiat erat.
-                                </a>
-                                <div class="blog-article__footer">
-                                    <div class="blog-article__meta">
-                                        <a href="#" style="color: #2845AC">Politic</a>
-                                        <small>/</small>
-                                        <span><i class="icon-calendar"></i>06 octombrie 2021</span>
-                                        <small>/</small>
-                                        <span><i class="icon-views"></i>9012</span>
-                                        <small>/</small>
-                                        <span><i class="icon-comment"></i>25</span>
-                                    </div>
+                                <div class="blog-article__content">
+                                    <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit
+                                        în
+                                        Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
+                                    <a href="#" class="blog-article__description">
+                                        Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
+                                        convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum
+                                        dui
+                                        vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras
+                                        sit
+                                        amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
+                                        eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis
+                                        sem,
+                                        dignissim ut enim vel, dignissim feugiat erat.
+                                    </a>
+                                    <div class="blog-article__footer">
+                                        <div class="blog-article__meta">
+                                            <a href="#" style="color: #2845AC">Politic</a>
+                                            <small>/</small>
+                                            <span><i class="icon-calendar"></i>06 octombrie 2021</span>
+                                            <small>/</small>
+                                            <span><i class="icon-views"></i>9012</span>
+                                            <small>/</small>
+                                            <span><i class="icon-comment"></i>25</span>
+                                        </div>
 
-                                    <div class="blog-article__controls">
-                                        <i class="icon-lock"></i>
-                                        <button class="icon-bookmark blog-article__save"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="blog-article blog-article--podcast blog-article__post">
-                            <img src="img/home-post2.jpg" alt="article" />
-
-                            <div class="blog-article__content">
-                                <h5>(Podcast) Schimbarea începe de la tine</h5>
-                                <a href="#" class="blog-article__description">
-                                    Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
-                                    convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum dui
-                                    vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras sit
-                                    amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
-                                    eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis sem,
-                                    dignissim ut enim vel, dignissim feugiat erat.
-                                </a>
-                                <div class="blog-article__footer">
-                                    <div class="blog-article__meta">
-                                        <span><i class="icon-calendar"></i>06 octombrie 2021</span>
-                                        <small>/</small>
-                                        <span><i class="icon-views"></i>9012</span>
-                                        <small>/</small>
-                                        <span><i class="icon-comment"></i>25</span>
-                                    </div>
-
-                                    <div class="blog-article__controls">
-                                        <button class="icon-bookmark"></button>
+                                        <div class="blog-article__controls">
+                                            <i class="icon-lock"></i>
+                                            <button class="icon-bookmark blog-article__save"></button>
+                                        </div>
                                     </div>
                                 </div>
+                            </article>
+                            <div class="blog-article__notlog">
+                                <p>
+                                    Adăugați articolul în “Articole salvate”,
+                                    pentru a-l citi mai apoi, când veți avea timp.
+                                    Pentru aceasta <span href="#">întrați în cont</span> sau <span
+                                        href="#">înregistrați-vă</span>.
+                                </p>
+                                <button class="icon-back button-back"></button>
                             </div>
-                        </article>
-                        <article class="blog-article blog-article__post">
-                            <img src="img/home-post3.jpg" alt="article" />
+                        </div>
 
-                            <div class="blog-article__content">
-                                <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit în
-                                    Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
-                                <a href="#" class="blog-article__description">
-                                    Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
-                                    convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum dui
-                                    vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras sit
-                                    amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
-                                    eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis sem,
-                                    dignissim ut enim vel, dignissim feugiat erat.
-                                </a>
-                                <div class="blog-article__footer">
-                                    <div class="blog-article__meta">
-                                        <a href="#" style="color: #FBC814">Economic</a>
-                                        <small>/</small>
-                                        <span><i class="icon-calendar"></i>06 octombrie 2021</span>
-                                        <small>/</small>
-                                        <span><i class="icon-views"></i>9012</span>
-                                        <small>/</small>
-                                        <span><i class="icon-comment"></i>25</span>
-                                    </div>
+                        <div class="blog-main__post">
+                            <article class="blog-article blog-article--podcast blog-article__post">
+                                <img src="img/home-post2.jpg" alt="article" />
 
-                                    <div class="blog-article__controls">
-                                        <button class="icon-bookmark-fill"></button>
+                                <div class="blog-article__content">
+                                    <h5>(Podcast) Schimbarea începe de la tine</h5>
+                                    <a href="#" class="blog-article__description">
+                                        Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
+                                        convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum
+                                        dui
+                                        vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras
+                                        sit
+                                        amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
+                                        eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis
+                                        sem,
+                                        dignissim ut enim vel, dignissim feugiat erat.
+                                    </a>
+                                    <div class="blog-article__footer">
+                                        <div class="blog-article__meta">
+                                            <span><i class="icon-calendar"></i>06 octombrie 2021</span>
+                                            <small>/</small>
+                                            <span><i class="icon-views"></i>9012</span>
+                                            <small>/</small>
+                                            <span><i class="icon-comment"></i>25</span>
+                                        </div>
+
+                                        <div class="blog-article__controls">
+                                            <button class="icon-bookmark"></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
+                        <div class="blog-main__post">
+                            <article class="blog-article blog-article__post">
+                                <img src="img/home-post3.jpg" alt="article" />
+
+                                <div class="blog-article__content">
+                                    <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit
+                                        în
+                                        Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
+                                    <a href="#" class="blog-article__description">
+                                        Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
+                                        convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum
+                                        dui
+                                        vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras
+                                        sit
+                                        amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
+                                        eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis
+                                        sem,
+                                        dignissim ut enim vel, dignissim feugiat erat.
+                                    </a>
+                                    <div class="blog-article__footer">
+                                        <div class="blog-article__meta">
+                                            <a href="#" style="color: #FBC814">Economic</a>
+                                            <small>/</small>
+                                            <span><i class="icon-calendar"></i>06 octombrie 2021</span>
+                                            <small>/</small>
+                                            <span><i class="icon-views"></i>9012</span>
+                                            <small>/</small>
+                                            <span><i class="icon-comment"></i>25</span>
+                                        </div>
+
+                                        <div class="blog-article__controls">
+                                            <button class="icon-bookmark-fill"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                         <div class="grid-ads">
                             <a href="#"><img src="img/ad-grid.jpg" alt="reclama"></a>
                         </div>
-                        <article class="blog-article blog-article--read blog-article__post">
-                            <img src="img/home-post4.jpg" alt="article" />
+                        <div class="blog-main__post">
+                            <article class="blog-article blog-article--read blog-article__post">
+                                <img src="img/home-post4.jpg" alt="article" />
 
-                            <div class="blog-article__content">
-                                <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit în
-                                    Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
-                                <a href="#" class="blog-article__description">
-                                    Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
-                                    convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum dui
-                                    vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras sit
-                                    amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
-                                    eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis sem,
-                                    dignissim ut enim vel, dignissim feugiat erat.
-                                </a>
-                                <div class="blog-article__footer">
-                                    <div class="blog-article__meta">
-                                        <a href="#" style="color: #1CAD68">Cultură</a>
-                                        <small>/</small>
-                                        <span><i class="icon-calendar"></i>06 octombrie 2021</span>
-                                        <small>/</small>
-                                        <span><i class="icon-views"></i>9012</span>
-                                        <small>/</small>
-                                        <span><i class="icon-comment"></i>25</span>
-                                    </div>
+                                <div class="blog-article__content">
+                                    <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit
+                                        în
+                                        Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
+                                    <a href="#" class="blog-article__description">
+                                        Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
+                                        convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum
+                                        dui
+                                        vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras
+                                        sit
+                                        amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
+                                        eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis
+                                        sem,
+                                        dignissim ut enim vel, dignissim feugiat erat.
+                                    </a>
+                                    <div class="blog-article__footer">
+                                        <div class="blog-article__meta">
+                                            <a href="#" style="color: #1CAD68">Cultură</a>
+                                            <small>/</small>
+                                            <span><i class="icon-calendar"></i>06 octombrie 2021</span>
+                                            <small>/</small>
+                                            <span><i class="icon-views"></i>9012</span>
+                                            <small>/</small>
+                                            <span><i class="icon-comment"></i>25</span>
+                                        </div>
 
-                                    <div class="blog-article__controls">
-                                        <button class="icon-bookmark"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="blog-article blog-article__post">
-                            <img src="img/home-post1.jpg" alt="article" />
-
-                            <div class="blog-article__content">
-                                <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit în
-                                    Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
-                                <a href="#" class="blog-article__description">
-                                    Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
-                                    convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum dui
-                                    vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras sit
-                                    amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
-                                    eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis sem,
-                                    dignissim ut enim vel, dignissim feugiat erat.
-                                </a>
-                                <div class="blog-article__footer">
-                                    <div class="blog-article__meta">
-                                        <a href="#" style="color: #1877CE">Sport</a>
-                                        <small>/</small>
-                                        <span><i class="icon-calendar"></i>06 octombrie 2021</span>
-                                        <small>/</small>
-                                        <span><i class="icon-views"></i>9012</span>
-                                        <small>/</small>
-                                        <span><i class="icon-comment"></i>25</span>
-                                    </div>
-
-                                    <div class="blog-article__controls">
-                                        <button class="icon-bookmark"></button>
+                                        <div class="blog-article__controls">
+                                            <button class="icon-bookmark"></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="blog-article blog-article__post">
-                            <img src="img/home-post6.jpg" alt="article" />
+                            </article>
+                        </div>
+                        <div class="blog-main__post">
+                            <article class="blog-article blog-article__post">
+                                <img src="img/home-post1.jpg" alt="article" />
 
-                            <div class="blog-article__content">
-                                <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit în
-                                    Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
-                                <a href="#" class="blog-article__description">
-                                    Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
-                                    convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum dui
-                                    vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras sit
-                                    amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
-                                    eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis sem,
-                                    dignissim ut enim vel, dignissim feugiat erat.
-                                </a>
-                                <div class="blog-article__footer">
-                                    <div class="blog-article__meta">
-                                        <a href="#" style="color: #F34C4C">COVID</a>
-                                        <small>/</small>
-                                        <span><i class="icon-calendar"></i>06 octombrie 2021</span>
-                                        <small>/</small>
-                                        <span><i class="icon-views"></i>9012</span>
-                                        <small>/</small>
-                                        <span><i class="icon-comment"></i>25</span>
-                                    </div>
+                                <div class="blog-article__content">
+                                    <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit
+                                        în
+                                        Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
+                                    <a href="#" class="blog-article__description">
+                                        Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
+                                        convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum
+                                        dui
+                                        vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras
+                                        sit
+                                        amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
+                                        eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis
+                                        sem,
+                                        dignissim ut enim vel, dignissim feugiat erat.
+                                    </a>
+                                    <div class="blog-article__footer">
+                                        <div class="blog-article__meta">
+                                            <a href="#" style="color: #1877CE">Sport</a>
+                                            <small>/</small>
+                                            <span><i class="icon-calendar"></i>06 octombrie 2021</span>
+                                            <small>/</small>
+                                            <span><i class="icon-views"></i>9012</span>
+                                            <small>/</small>
+                                            <span><i class="icon-comment"></i>25</span>
+                                        </div>
 
-                                    <div class="blog-article__controls">
-                                        <button class="icon-bookmark-fill"></button>
+                                        <div class="blog-article__controls">
+                                            <button class="icon-bookmark"></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
+                        <div class="blog-main__post">
+                            <article class="blog-article blog-article__post">
+                                <img src="img/home-post6.jpg" alt="article" />
+
+                                <div class="blog-article__content">
+                                    <h5>10 luni de tăcere între Irina Vlah și Maia Sandu: A spus o minciună când a venit
+                                        în
+                                        Găgăuzia. Trebuie să unească țara, nu să o împartă.</h5>
+                                    <a href="#" class="blog-article__description">
+                                        Nullam eget euismod enim, eu lobortis magna. Suspendisse eget ex ut diam lacinia
+                                        convallis sed sed erat. Donec vitae leo quam. Donec non nisi viverra, vestibulum
+                                        dui
+                                        vitae, tincidunt magna. Morbi ut vulputate eros. Phasellus eu gravida diam. Cras
+                                        sit
+                                        amet mattis odio, id efficitur neque. Nullam tortor metus, mollis vel facilisis
+                                        eget, volutpat nec turpis. Morbi condimentum volutpat vestibulum. Nulla turpis
+                                        sem,
+                                        dignissim ut enim vel, dignissim feugiat erat.
+                                    </a>
+                                    <div class="blog-article__footer">
+                                        <div class="blog-article__meta">
+                                            <a href="#" style="color: #F34C4C">COVID</a>
+                                            <small>/</small>
+                                            <span><i class="icon-calendar"></i>06 octombrie 2021</span>
+                                            <small>/</small>
+                                            <span><i class="icon-views"></i>9012</span>
+                                            <small>/</small>
+                                            <span><i class="icon-comment"></i>25</span>
+                                        </div>
+
+                                        <div class="blog-article__controls">
+                                            <button class="icon-bookmark-fill"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
 
                         <div class="blog-main__more">
                             <a href="#" class="button button-dark"><span class="icon-refresh"></span>Vezi mai mult</a>

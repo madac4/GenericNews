@@ -1,37 +1,40 @@
-input[type="file"]::-webkit-file-upload-button{
-    background-color: #E4E9F2;
-    border:none;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.03em;
-    color: $maincolor;
-    font-family: inherit;
+.raport-modal {
+    position: fixed;
+    z-index: 55;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 625px;
+    background-color: #FFFFFF;
+    padding: 40px;
     transition: all 0.4s;
-    padding: 20px 0;
-    width: 140px;
-    &:hover{
-        background-color: darken($color: #E4E9F2, $amount: 6);
+    opacity: 0;
+    visibility: hidden;
+    @media (max-width: $md5) {
+        max-width: 95%;
     }
-}
-
-.raport-modal{
-    h3{
-
+    @media (max-width: $md6) {
+        padding: 20px;
     }
-    .raport-modal__form{
-        p{git
-            input[type="file"]{
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    h3 {
+        font-family: 'RobotoSlab';
+        margin-bottom: 30px;
+    }
+    .raport-modal__form {
+        p {
+            position: relative;
+            input[type="file"] {
                 border: none;
                 padding: 0;
-            } 
-            label[for="termeni"]{
-                display: flex;
-                align-items: center;
-                width: 100%;
             }
-            input[type="file"]::-webkit-file-upload-button{
+            input[type="file"]::-webkit-file-upload-button {
                 background-color: #E4E9F2;
-                border:none;
+                border: none;
                 font-size: 14px;
                 line-height: 100%;
                 letter-spacing: 0.03em;
@@ -40,10 +43,54 @@ input[type="file"]::-webkit-file-upload-button{
                 transition: all 0.4s;
                 padding: 20px 0;
                 width: 140px;
-                &:hover{
+                &:hover {
                     background-color: darken($color: #E4E9F2, $amount: 6);
                 }
-            } 
+            }
+            input[type="checkbox"] {
+                display: inline-block;
+                width: 0;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    border: 2px solid $bgcolor;
+                    bottom: 1px;
+                    z-index: 2;
+                    display: block;
+                }
+            }
+            label[for="termeni"] {
+                padding-left: 20px;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                color: #000000;
+                a {
+                    color: #005B9C;
+                }
+            }
+            .checkbox {
+                display: grid;
+                place-items: center;
+                width: 18px;
+                height: 18px;
+                background-color: $bgcolor;
+                transition: all 0.4s;
+                opacity: 0;
+                position: absolute;
+                bottom: 1px;
+                .icon-done {
+                    color: #fff;
+                }
+            }
+            input[type="checkbox"]:checked~.checkbox {
+                background-color: $bgcolor;
+                opacity: 1;
+            }
+        }
+        button {
+            margin-top: 30px;
         }
     }
 }

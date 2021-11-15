@@ -86,6 +86,14 @@
         .page__sidebar-slider {
             .sidebar-slider__body {
                 .sidebar-slider__slider {
+                    @media (max-width: $md3) {
+                        max-width: 430px;
+                        margin: 0 auto;
+                    }
+                    @media (max-width: $md6) {
+                        max-width: 280px;
+                        margin: 0 auto;
+                    }
                     .slider-sidebar__body {
                         .slider-sidebar__slide {
                             .sidebar-slide__meta{
@@ -97,7 +105,6 @@
                                 a{
                                     font-family: 'RobotoSlab';
                                     font-weight: 500;
-                                    
                                     color: #FFFFFF;
                                 }
                                 span{
@@ -109,8 +116,11 @@
                             }
                             p{
                                 margin: 20px;
-                                
                                 line-height: 140%;
+                                @media (max-width: $md3) {
+                                    margin: 0;
+                                    margin: 20px 0;
+                                }
                             }
                         }
                     }

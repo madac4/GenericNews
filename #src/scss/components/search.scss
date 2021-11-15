@@ -3,10 +3,14 @@
     inset: 0;
     background: rgba(0, 0, 0, 0.8);
     padding: 50px 100px;
-    z-index: 50;
+    z-index: 60;
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s;
+    @media (max-width: $md4) {
+        padding: 20px 15px;
+    }
+    
     &.open {
         opacity: 1;
         visibility: visible
@@ -15,10 +19,16 @@
         margin-bottom: 30px;
         display: flex;
         align-items: center;
+        @media (max-width: $md4) {
+            margin-bottom: 15px;
+        }
         h1 {
             color: #fff;
             font-family: 'Inter';
             flex: 1;
+            @media (max-width: $md5) {
+                font-size: 24px;
+            }
         }
         .search-all {
             max-width: 185px;
@@ -28,6 +38,9 @@
             font-weight: 600;
             font-size: 14px;
             text-transform: uppercase;
+            @media (max-width: $md5) {
+                display: none;
+            }
             &:hover {
                 background-color: #fff;
                 color: $maincolor;
@@ -37,10 +50,16 @@
             font-size: 60px;
             color: #fff;
             margin-left: 30px;
+            @media (max-width: $md5) {
+                font-size: 36px;
+            }
         }
     }
     &__form {
         margin-bottom: 30px;
+        @media (max-width: $md4) {
+            margin-bottom: 15px;
+        }
         input {
             background-color: transparent;
             border: none;
@@ -52,16 +71,22 @@
     }
     &__grid {
         overflow: auto;
-        .scroll{
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-gap: 50px 30px;
-        }
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 50px 30px;
         @media (max-width: $md1) {
             grid-template-columns: repeat(4, 1fr);
         }
         @media (max-width: $md2) {
             grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: $md3) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+        @media (max-width: $md4) {
+            grid-gap: 20px;
         }
         .search-modal__result {
             width: 100%;

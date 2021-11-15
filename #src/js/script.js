@@ -25,8 +25,38 @@ const authModalControls = document.querySelector('.auth-modal__controls');
 const authTabsControl = document.querySelectorAll('.auth-modal__controls .tabs-control');
 const authTabsForm = document.querySelectorAll('.auth-form');
 
-const header = document.querySelector('.header')
-const upperHeader = document.querySelector('.upper-header')
+const header = document.querySelector('.header');
+const upperHeader = document.querySelector('.upper-header');
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header-menu');
+
+const homeArticles = document.querySelector('.blog-article__post');
+
+const sidebarWrite = document.querySelector('.sidebar-write');
+const raportModal = document.querySelector('.raport-modal');
+
+if (raportModal) {
+    sidebarWrite.addEventListener('click', (e) => {
+        raportModal.classList.add('open');
+        overlay.classList.add('open');
+    })
+    document.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            raportModal.classList.remove('open');
+            overlay.classList.remove('open');
+        }
+    })
+}
+
+if (burger) {
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+        // overlay.classList.toggle('open');
+        document.body.classList.toggle('lock');
+    })
+}
 
 if (languageToggler) {
     languageToggler.addEventListener('click', () => {
@@ -38,6 +68,19 @@ if (languageToggler) {
             languageToggler.textContent = 'ro'
         }
     })
+}
+
+if (homeArticles) {
+    const bookmark = homeArticles.querySelector('.blog-article__save')
+    const backButton = homeArticles.nextElementSibling.querySelector('.button-back')
+    bookmark.addEventListener('click', () => {
+        homeArticles.classList.add('flip')
+        homeArticles.nextElementSibling.classList.add('flip')
+    });
+    backButton.addEventListener('click', () => {
+        homeArticles.classList.remove('flip')
+        homeArticles.nextElementSibling.classList.remove('flip')
+    });
 }
 
 if (searchModal) {
@@ -152,6 +195,13 @@ if (authModal) {
         authModal.classList.remove('open');
         overlay.classList.remove('open');
         document.body.classList.remove('lock');
+    })
+    document.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            authModal.classList.remove('open');
+            overlay.classList.remove('open');
+            document.body.classList.remove('lock');
+        }
     })
 }
 

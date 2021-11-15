@@ -119,15 +119,14 @@ let sliderTemplate = new Swiper('.slider', {
 if (document.querySelector('.slider-sidebar__body')) {
     new Swiper('.slider-sidebar__body', {
         autoplay: {
-            delay: 4000,
+            delay: 3000,
             disableOnInteraction: false,
-        },   
+        },
         observer: true,
         observeParents: true,
         slidesPerView: 1,
         spaceBetween: 0,
         speed: 800,
-        crossFade: true,
         lazy: true,
         pagination: {
             el: '.slider-sidebar-controls__dots',
