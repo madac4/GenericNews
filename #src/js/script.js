@@ -25,8 +25,22 @@ const authModalControls = document.querySelector('.auth-modal__controls');
 const authTabsControl = document.querySelectorAll('.auth-modal__controls .tabs-control');
 const authTabsForm = document.querySelectorAll('.auth-form');
 
-const header = document.querySelector('.header')
-const upperHeader = document.querySelector('.upper-header')
+const header = document.querySelector('.header');
+const upperHeader = document.querySelector('.upper-header');
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header-menu');
+
+const homeArticles = document.querySelector('.blog-article__post');
+
+if (burger) {
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+        // overlay.classList.toggle('open');
+        document.body.classList.toggle('lock');
+    })
+}
 
 if (languageToggler) {
     languageToggler.addEventListener('click', () => {
@@ -38,6 +52,19 @@ if (languageToggler) {
             languageToggler.textContent = 'ro'
         }
     })
+}
+
+if (homeArticles) {
+    const bookmark = homeArticles.querySelector('.blog-article__save')
+    const backButton = homeArticles.nextElementSibling.querySelector('.button-back')
+    bookmark.addEventListener('click', () => {
+        homeArticles.classList.add('flip')
+        homeArticles.nextElementSibling.classList.add('flip')
+    });
+    backButton.addEventListener('click', () => {
+        homeArticles.classList.remove('flip')
+        homeArticles.nextElementSibling.classList.remove('flip')
+    });
 }
 
 if (searchModal) {
