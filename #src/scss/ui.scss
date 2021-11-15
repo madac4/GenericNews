@@ -94,7 +94,7 @@ form {
             color: $accentcolor;
         }
     }
-    input {
+    input,textarea {
         display: block;
         margin-top: 10px;
         margin-bottom: 5px;
@@ -104,13 +104,16 @@ form {
         transition: all 0.4s;
         outline: none;
         padding: 16px 20px;
-        
         &:focus {
             border-color: $maincolor;
         }
         &::placeholder {
             color: #B9B9B9;
         }
+    }
+    textarea {
+        height: 95px;
+        resize: none;
     }
     small.error {
         font-size: 12px;

@@ -1,0 +1,49 @@
+input[type="file"]::-webkit-file-upload-button{
+    background-color: #E4E9F2;
+    border:none;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: $maincolor;
+    font-family: inherit;
+    transition: all 0.4s;
+    padding: 20px 0;
+    width: 140px;
+    &:hover{
+        background-color: darken($color: #E4E9F2, $amount: 6);
+    }
+}
+
+.raport-modal{
+    h3{
+
+    }
+    .raport-modal__form{
+        p{git
+            input[type="file"]{
+                border: none;
+                padding: 0;
+            } 
+            label[for="termeni"]{
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            input[type="file"]::-webkit-file-upload-button{
+                background-color: #E4E9F2;
+                border:none;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0.03em;
+                color: $maincolor;
+                font-family: inherit;
+                transition: all 0.4s;
+                padding: 20px 0;
+                width: 140px;
+                &:hover{
+                    background-color: darken($color: #E4E9F2, $amount: 6);
+                }
+            } 
+        }
+    }
+}

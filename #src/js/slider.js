@@ -121,7 +121,7 @@ if (document.querySelector('.slider-sidebar__body')) {
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
-        },
+        },   
         observer: true,
         observeParents: true,
         slidesPerView: 1,

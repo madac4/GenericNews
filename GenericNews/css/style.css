@@ -424,7 +424,8 @@ form label span {
   color: #FF655E;
 }
 
-form input {
+form input,
+form textarea {
   display: block;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -438,28 +439,35 @@ form input {
   padding: 16px 20px;
 }
 
-form input:focus {
+form input:focus,
+form textarea:focus {
   border-color: #3C3C3C;
 }
 
-form input::-webkit-input-placeholder {
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
   color: #B9B9B9;
 }
 
-form input::-moz-placeholder {
+form input::-moz-placeholder, form textarea::-moz-placeholder {
   color: #B9B9B9;
 }
 
-form input:-ms-input-placeholder {
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-form input::-ms-input-placeholder {
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-form input::placeholder {
+form input::placeholder,
+form textarea::placeholder {
   color: #B9B9B9;
+}
+
+form textarea {
+  height: 95px;
+  resize: none;
 }
 
 form small.error {
@@ -1472,18 +1480,70 @@ body.color-page {
   color: #fff;
 }
 
-.page-sidebar .sidebar-contact {
+.page-sidebar .sidebar-write {
   padding: 30px 0;
   text-align: center;
   cursor: pointer;
 }
 
-.page-sidebar .sidebar-contact h5 {
+.page-sidebar .sidebar-write h5 {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #E4E9F2;
+  border: none;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: #3C3C3C;
+  font-family: inherit;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 20px 0;
+  width: 140px;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #cfd8e8;
+}
+
+.raport-modal .raport-modal__form p git
+input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+.raport-modal .raport-modal__form p label[for="termeni"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.raport-modal .raport-modal__form p input[type="file"]::-webkit-file-upload-button {
+  background-color: #E4E9F2;
+  border: none;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: #3C3C3C;
+  font-family: inherit;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 20px 0;
+  width: 140px;
+}
+
+.raport-modal .raport-modal__form p input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #cfd8e8;
 }
 
 .page-introduction {
@@ -1917,23 +1977,23 @@ body.color-page {
   }
 
   h1 {
-    font-size: calc( 36px + 12 * ((100vw - 320px) / 790));
+    font-size: calc( 36px + 12 * ((100vw - 320px) / 790));
   }
 
   h2 {
-    font-size: calc( 24px + 12 * ((100vw - 320px) / 790));
+    font-size: calc( 24px + 12 * ((100vw - 320px) / 790));
   }
 
   h3 {
-    font-size: calc( 18px + 6 * ((100vw - 320px) / 790));
+    font-size: calc( 18px + 6 * ((100vw - 320px) / 790));
   }
 
   h4 {
-    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
+    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
   }
 
   h5 {
-    font-size: calc( 14px + 2 * ((100vw - 320px) / 790));
+    font-size: calc( 14px + 2 * ((100vw - 320px) / 790));
   }
 
   .recomandation-meta span:not(:last-child) {
