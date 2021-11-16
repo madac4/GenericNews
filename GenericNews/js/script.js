@@ -164,8 +164,6 @@ const searchInput = document.getElementById('search');
 const searchClose = document.querySelector('.search-close');
 const overlay = document.querySelector('.overlay');
 
-const languageToggler = document.querySelector('.language-toggler');
-
 const username = document.getElementById('username')
 const email = document.getElementById('email')
 const emailRegister = document.getElementById('email-register')
@@ -217,18 +215,6 @@ if (burger) {
     })
 }
 
-if (languageToggler) {
-    languageToggler.addEventListener('click', () => {
-        if (languageToggler.getAttribute('data-language') === 'ro') {
-            languageToggler.dataset.language = 'ru';
-            languageToggler.textContent = 'ru'
-        } else {
-            languageToggler.dataset.language = 'ro';
-            languageToggler.textContent = 'ro'
-        }
-    })
-}
-
 if (homeArticles) {
     const bookmark = homeArticles.querySelector('.blog-article__save')
     const backButton = homeArticles.nextElementSibling.querySelector('.button-back')
@@ -270,7 +256,19 @@ if (passwordToggler) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const line = document.querySelector('.header-progress__line');
 
+    window.addEventListener('scroll', () => {
+        let scrollPos = window.scrollY;
+        let windowHeight = window.innerHeight;
+        let pageHeight = document.documentElement.scrollHeight;
+
+        let progressBar = Math.floor(scrollPos / (pageHeight - windowHeight) * 100);
+
+        line.style.width = `${progressBar}%`;
+    });
+});
 
 function loginFormValidation() {
     const atposition = email.value.indexOf("@");

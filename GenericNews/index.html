@@ -6,6 +6,9 @@
     <title>Homepage - Generic News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
+        integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -26,6 +29,9 @@
 </div>
 
 <header class="header">
+    <div class="header-progress">
+        <div class="header-progress__line"></div>
+    </div>
     <div class="container header-container">
         <div class="header-logo">
             <a href="/"><img src="../img/logo.png" alt="logo"></a>
@@ -1009,50 +1015,55 @@
         <input type="text" id="search">
     </form>
 
-    <div class="search-modal__grid">
-        <div class="search-modal__result">
-            <img src="../img/search-result0.jpg" alt="article">
-            <a href="#">Постправда о постправде: в российском переводе книги Юваля Харари главу про Путина и Крым
-                заменили Трампом. Автор утвердил правки</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result1.jpg" alt="article">
-            <a href="#">“ПриватБанк” подарит iPhone каждому, кто откажется от фамилий Путин, Сталин и других</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result2.jpg" alt="article">
-            <a href="#">Залечь на дно в Ницце – интервью со сбежавшим от власти Путина российским бизнесменом Виталием
-                Архангельским</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result3.jpg" alt="article">
-            <a href="#">Холодный прием Путина и почему молчит Кернес: что украинцы искали в интернете на этой неделе</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result4.jpg" alt="article">
-            <a href="#">Как действия Путина в Украине убивают российскую стартап-культуру</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result5.jpg" alt="article">
-            <a href="#">«Наследницу» S.T.A.L.K.E.R. от украинской гейм-студии West Games забанили на Kickstarter после
-                “письма от Путина”</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result6.jpg" alt="article">
-            <a href="#">Максимальный репост: звезда для Путина, часовой пояс “Россия” и новые приключения Елены
-                Бондаренко</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result7.jpg" alt="article">
-            <a href="#">Статья “Путин-х***ло” стала самой популярной в украинской “Википедии”</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result8.jpg" alt="article">
-            <a href="#">Культ личности: итальянские ювелиры выпустили золотые iPhone с портретом Путина</a>
-        </div>
-        <div class="search-modal__result">
-            <img src="../img/search-result9.jpg" alt="article">
-            <a href="#">Mortal Kombat по-украински: с участием Яроша, Януковича, Путина, Ляшко и других</a>
+    <div class="search-modal__results" data-simplebar>
+        <div class="search-modal__grid">
+            <div class="search-modal__result">
+                <img src="../img/search-result0.jpg" alt="article">
+                <a href="#">Постправда о постправде: в российском переводе книги Юваля Харари главу про Путина и Крым
+                    заменили Трампом. Автор утвердил правки</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result1.jpg" alt="article">
+                <a href="#">“ПриватБанк” подарит iPhone каждому, кто откажется от фамилий Путин, Сталин и других</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result2.jpg" alt="article">
+                <a href="#">Залечь на дно в Ницце – интервью со сбежавшим от власти Путина российским бизнесменом
+                    Виталием
+                    Архангельским</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result3.jpg" alt="article">
+                <a href="#">Холодный прием Путина и почему молчит Кернес: что украинцы искали в интернете на этой
+                    неделе</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result4.jpg" alt="article">
+                <a href="#">Как действия Путина в Украине убивают российскую стартап-культуру</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result5.jpg" alt="article">
+                <a href="#">«Наследницу» S.T.A.L.K.E.R. от украинской гейм-студии West Games забанили на Kickstarter
+                    после
+                    “письма от Путина”</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result6.jpg" alt="article">
+                <a href="#">Максимальный репост: звезда для Путина, часовой пояс “Россия” и новые приключения Елены
+                    Бондаренко</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result7.jpg" alt="article">
+                <a href="#">Статья “Путин-х***ло” стала самой популярной в украинской “Википедии”</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result8.jpg" alt="article">
+                <a href="#">Культ личности: итальянские ювелиры выпустили золотые iPhone с портретом Путина</a>
+            </div>
+            <div class="search-modal__result">
+                <img src="../img/search-result9.jpg" alt="article">
+                <a href="#">Mortal Kombat по-украински: с участием Яроша, Януковича, Путина, Ляшко и других</a>
+            </div>
         </div>
     </div>
 </div>
@@ -1204,6 +1215,9 @@
 
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
+        integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 </body>
 

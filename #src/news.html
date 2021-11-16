@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>News - Generic News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
+        integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="color-page">
+    @@include('./components/header.html')
+
+    <main class="main news-page">
+        <div class="content">
+            <div class="container content-container">
+                <div class="content-container__body">
+                    <div class="content-news">
+                        <h4>Știri recente</h4>
+                        <div class="content-news__item">
+                            <span class="news-time">14:50</span>
+                            <a href="#">Суперсила профессионалов: почему стоит сделать предзаказ нового MacBook? </a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">13:26</span>
+                            <a href="#">Digital Future exits Preply, Attendify, SOC Prime, and Rallyware</a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">11:12</span>
+                            <a href="#">Rocket запустила веб-версию. Теперь заказ можно сделать прямо с компьютера</a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">04:41</span>
+                            <a href="#">Как будет выглядеть метавселенная от Microsoft</a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">02 Oct</span>
+                            <a href="#">Днепровский офис Playtika ждет сокращение и релокация в Румынию</a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">02 Oct</span>
+                            <a href="#">У части ФОП появились штрафы за время карантина: как их проверить и что
+                                делать</a>
+                        </div>
+                        <div class="content-news__item premium">
+                            <span class="news-time">02 Oct</span>
+                            <div class="premium-content">
+                                <div class="premium-content__body"
+                                    style="background: url('img/premium-post.jpg') 50% 50% / cover no-repeat;">
+                                    <h3>
+                                        <a href="">
+                                            По мотивам сериала «Игра в кальмара» создали токен Squid, собрали $2 млн и
+                                            исчезли
+                                        </a>
+                                    </h3>
+                                    <div class="premium-content__meta">
+                                        <span><i class="icon-views"></i>12300</span>
+                                        <span><i class="icon-comment"></i>8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">02 Oct</span>
+                            <a href="#">Программист создала абсурдное резюме, полное «ключевых слов». Ей ответили
+                                Atlassian, AirBnB и Dropbox</a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">02 Oct</span>
+                            <a href="#">EdTech-компания Udemy вышла на IPO с оценкой в $4 млрд</a>
+                        </div>
+                        <div class="content-news__item">
+                            <span class="news-time">01 Oct</span>
+                            <a href="#">В Киеве состоится конференция Social Media Week Kyiv с участием EMOJIPEDIA,
+                                Adweek, WE ARE SOCIAL и Publicis Groupe </a>
+                        </div>
+
+                        <div class="content-news__pagination">
+                            <a href="#" class="pagination-jump">La Inceput</a>
+                            <ul class="pagination">
+                                <li><a href="#"><span class="icon-chevron-left"></span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#"><span class="icon-chevron-right"></span></a></li>
+                            </ul>
+                            <a href="#" class="pagination-jump">La Sfarsit</a>
+                        </div>
+                    </div>
+                </div>
+                @@include('./components/sidebar.html')
+            </div>
+        </div>
+    </main>
+
+
+    <div class="overlay"></div>
+    @@include('./components/search.html')
+    @@include('./components/auth.html')
+    @@include('./components/raport.html')
+
+    @@include('./components/footer.html')
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
+        integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

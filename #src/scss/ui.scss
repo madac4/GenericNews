@@ -126,7 +126,7 @@ h1 {
     font-family: 'RobotoSlab';
     font-weight: 500;
     line-height: 120%;
-    @include adaptiv-value('font-size', 48, 36, 1);
+    @include adaptiv-value('font-size', 48, 34, 1);
 }
 
 h2 {

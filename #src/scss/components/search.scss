@@ -69,9 +69,11 @@
             padding: 0;
         }
     }
-    &__grid {
+    &__results{
         overflow: auto;
         height: 70vh;
+    }
+    &__grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 50px 30px;
