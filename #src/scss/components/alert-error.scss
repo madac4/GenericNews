@@ -1,0 +1,39 @@
+.raport-error{
+    position: fixed;
+    top: 10px;
+    z-index: 55;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background-color: #fff;
+    padding: 20px 25px;
+    opacity: 0;
+    height: 180px;
+    visibility: hidden;
+    transition: all 0.4s;
+    &.open{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+    h4{
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(60, 60, 67, 0.6);
+        margin-bottom: 15px;
+    }
+    button{
+        position: absolute;
+        bottom:20px;
+        right:25px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.75px;
+        display: block;
+        text-transform: uppercase;
+        color: $accentcolor;
+        
+    }
+}

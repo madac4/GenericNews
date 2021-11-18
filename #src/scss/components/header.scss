@@ -122,20 +122,19 @@
                            }
                            &:last-child{
                                background-color: #000;
-        
                            }
                        }
                     }
-                   span{
+                    span{
                         background-color: #fff;
-                   }
+                    }
                }
                 &__login {
                     border: 1px solid #fff;
                     background-color: #fff;
                     color: $maincolor;
                     .icon-person{
-                        color: $maincolor;
+                        color: #fff;
                     }
                     &:hover {
                         background-color: $maincolor;

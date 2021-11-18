@@ -193,13 +193,32 @@ const homeArticles = document.querySelector('.blog-article__post');
 const sidebarWrite = document.querySelector('.sidebar-write');
 const raportModal = document.querySelector('.raport-modal');
 
+const shareButton = document.querySelector('.share');
+const shareOptions = document.querySelector('.share-options');
+const copyToClipboard = document.querySelector('.share-options__link');
+
+const raportError = document.querySelector('.raport-error');
+const articleSave = document.querySelector('.article-save');
+const raportErrorClose = document.querySelector('.raport-error__close');
+
+if (articleSave) {
+    articleSave.addEventListener('click', () => {
+        raportError.classList.add('open');
+        overlay.classList.add('open');
+    });
+    raportErrorClose.addEventListener('click', () => {
+        raportError.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+}
+
 if (raportModal) {
     sidebarWrite.addEventListener('click', (e) => {
         raportModal.classList.add('open');
         overlay.classList.add('open');
     })
-    document.addEventListener('click', (e) => {
-        if (e.target === overlay) {
+    document.addEventListener('mousedown', (e) => {
+        if (!e.target.closest('.raport-modal')) {
             raportModal.classList.remove('open');
             overlay.classList.remove('open');
         }
@@ -353,13 +372,6 @@ if (authModal) {
         overlay.classList.remove('open');
         document.body.classList.remove('lock');
     })
-    document.addEventListener('click', (e) => {
-        if (e.target === overlay) {
-            authModal.classList.remove('open');
-            overlay.classList.remove('open');
-            document.body.classList.remove('lock');
-        }
-    })
 }
 
 if (header) {
@@ -373,5 +385,18 @@ if (header) {
         } else {
             header.classList.remove('sticky');
         }
+    })
+}
+
+if (shareButton) {
+    shareButton.addEventListener('click', () => {
+        shareOptions.classList.toggle('open');
+    });
+    copyToClipboard.addEventListener('click', () => {
+        const currentUrl = window.location.href;
+        navigator.clipboard.writeText(currentUrl)
+        copyToClipboard.textContent = 'LINK COPIAT'
+        copyToClipboard.classList.remove('button-outline');
+        copyToClipboard.classList.add('button-light');
     })
 }

@@ -31,6 +31,7 @@
             input[type="file"] {
                 border: none;
                 padding: 0;
+                margin-bottom: 15px;
             }
             input[type="file"]::-webkit-file-upload-button {
                 background-color: #E4E9F2;
@@ -49,20 +50,15 @@
             }
             input[type="checkbox"] {
                 display: inline-block;
-                width: 0;
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 18px;
-                    height: 18px;
-                    border: 2px solid $bgcolor;
-                    bottom: 1px;
-                    z-index: 2;
-                    display: block;
-                }
+                position: absolute;
+                max-width: 18px;
+                max-height: 18px;
+                bottom: -1px;
+                z-index: 2;
+                opacity: 0;
             }
             label[for="termeni"] {
-                padding-left: 20px;
+                padding-left: 25px;
                 font-size: 14px;
                 letter-spacing: 0.03em;
                 color: #000000;
@@ -75,18 +71,23 @@
                 place-items: center;
                 width: 18px;
                 height: 18px;
-                background-color: $bgcolor;
                 transition: all 0.4s;
-                opacity: 0;
                 position: absolute;
                 bottom: 1px;
+                border: 2px solid $bgcolor;
+
                 .icon-done {
                     color: #fff;
+                    opacity: 0;
                 }
             }
             input[type="checkbox"]:checked~.checkbox {
                 background-color: $bgcolor;
                 opacity: 1;
+                .icon-done {
+                    color: #fff;
+                    opacity: 1;
+                }
             }
         }
         button {
