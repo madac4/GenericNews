@@ -173,6 +173,10 @@ const loginForm = document.getElementById('login-form')
 const registerForm = document.getElementById('register-form')
 const passwordToggler = document.getElementById('password-toggler')
 const passwordToggler2 = document.getElementById('password-toggler2')
+const passwordToggler3 = document.getElementById('password-toggler3')
+const passwordToggler4 = document.getElementById('password-toggler4')
+const passwordNew = document.getElementById('password-reset')
+const passwordConfirm = document.getElementById('password-confirm')
 
 const authModal = document.querySelector('.auth-modal');
 const authClose = document.querySelector('.auth-close');
@@ -201,6 +205,14 @@ const raportError = document.querySelector('.raport-error');
 const articleSave = document.querySelector('.article-save');
 const raportErrorClose = document.querySelector('.raport-error__close');
 
+const lostPasswordButton = document.querySelectorAll('.lost-password');
+const lostPasswordModal = document.querySelector('.password-modal');
+const closePasswordModal = document.querySelector('.password-modal .close-modal');
+const openLoginModal = document.querySelector('.password-modal .form-buttons p button');
+const resetForm = document.querySelector('.reset-form');
+const emailMessageModal = document.querySelector('.email-message');
+const emailMessageClose = document.querySelector('.email-message .email-message__close');
+
 if (articleSave) {
     articleSave.addEventListener('click', () => {
         raportError.classList.add('open');
@@ -216,11 +228,13 @@ if (raportModal) {
     sidebarWrite.addEventListener('click', (e) => {
         raportModal.classList.add('open');
         overlay.classList.add('open');
-    })
-    document.addEventListener('mousedown', (e) => {
-        if (!e.target.closest('.raport-modal')) {
-            raportModal.classList.remove('open');
-            overlay.classList.remove('open');
+        if (raportModal.classList.contains('open')) {
+            document.addEventListener('mousedown', (e) => {
+                if (!e.target.closest('.raport-modal')) {
+                    raportModal.classList.remove('open');
+                    overlay.classList.remove('open');
+                }
+            })
         }
     })
 }
@@ -268,9 +282,25 @@ if (passwordToggler) {
         password.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
+}
+if (passwordToggler2) {
     passwordToggler2.addEventListener('click', function (e) {
         const type = passwordRegister.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordRegister.setAttribute('type', type);
+        this.classList.toggle('icon-eye-slash');
+    });
+}
+if (passwordToggler3) {
+    passwordToggler3.addEventListener('click', function (e) {
+        const type = passwordNew.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordNew.setAttribute('type', type);
+        this.classList.toggle('icon-eye-slash');
+    });
+}
+if (passwordToggler4) {
+    passwordToggler4.addEventListener('click', function (e) {
+        const type = passwordConfirm.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordConfirm.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
 }
@@ -400,3 +430,42 @@ if (shareButton) {
         copyToClipboard.classList.add('button-light');
     })
 }
+
+
+if (lostPasswordModal) {
+    lostPasswordButton.forEach(button => {
+        button.addEventListener('click', () => {
+            lostPasswordModal.classList.add('open');
+            authModal.classList.remove('open');
+        });
+    })
+
+    openLoginModal.addEventListener('click', () => {
+        authModal.classList.add('open');
+        lostPasswordModal.classList.remove('open');
+    })
+
+    closePasswordModal.addEventListener('click', () => {
+        lostPasswordModal.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+
+    resetForm.addEventListener('submit', (event) => {
+        event.preventDefault
+        const emailsValue = document.getElementById("email-reset").value
+        const confEmail = document.getElementById("email-confirm")
+        const confEmailValue = document.getElementById("email-confirm").value
+        if (emailsValue !== confEmailValue) {
+            confEmail.nextElementSibling.textContent = 'Email-urile nu coincid';
+        } else {
+            emailMessageModal.classList.add('open')
+            lostPasswordModal.classList.remove('open')
+        }
+    })
+
+    emailMessageClose.addEventListener('click', () => {
+        emailMessageModal.classList.remove('open')
+        overlay.classList.remove('open')
+    })
+}
+

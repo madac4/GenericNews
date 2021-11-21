@@ -1,0 +1,39 @@
+.email-message{
+    background-color: #fff;
+    max-width: 430px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 55;
+    transition: all 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    &.open{
+        opacity: 1;
+        visibility: visible;
+    }
+    h3{
+        padding: 30px;
+        padding-bottom: 0;
+    }
+    p{
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.0015em;
+        color: #2E3A59;
+        padding: 0 30px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $linecolor;
+    }
+    &__block{
+        padding-bottom: 20px;
+        padding-right: 30px;
+    }
+    .email-message__close{
+        width: 100px;
+        margin-left: auto;
+    }
+}

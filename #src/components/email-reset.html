@@ -1,0 +1,29 @@
+<div class="password-modal">
+    <div class="password-modal__content">
+        <h3>Recuperare parolă</h3>
+        <p>Pe adresa ta de e-mail vor fi trimise instructiuni pentru recuperarea parolei.</p>
+        <form action="#" class="reset-form">
+            <p>
+                <label for="email-reset">Email</label>
+                <input type="email" id="email-reset" placeholder="Introdu adresa de email">
+            </p>
+            <p>
+                <label for="email-confirm">Confirmă email</label>
+                <input type="email" id="email-confirm" placeholder="Reintrodu adresa">
+                <small class="error"></small>
+            </p>
+
+            <div class="form-buttons">
+                <p>
+                    Ai deja cont? <button type="button">Loghează-te</button>
+                </p>
+                <button type="submit" class="button button-danger rounded">Recuperează</button>
+            </div>
+        </form>
+
+        <div class="resend-email">
+            <span>N-ai primit nimic pe e-mail? <a href="#">Click pentru a retrimite</a></span>
+        </div>
+    </div>
+    <button class="icon-close close-modal"></button>
+</div>

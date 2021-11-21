@@ -93,22 +93,14 @@
                 display: block;
             }
             label {
-                position: relative;
                 margin-bottom: 20px;
                 display: block;
-                .icon-eye {
-                    position: absolute;
-                    font-size: 20px;
-                    top: 45px;
-                    right: 15px;
-                    cursor: pointer;
-                }
             }
             .form-buttons {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                a {
+                .lost-password {
                     
                     color: #2C5282;
                 }
@@ -160,5 +152,16 @@
                 }
             }
         }
+    }
+}
+
+label, p {
+    position: relative;
+    .icon-eye {
+        position: absolute;
+        font-size: 20px;
+        top: 45px;
+        right: 15px;
+        cursor: pointer;
     }
 }

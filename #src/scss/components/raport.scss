@@ -75,10 +75,10 @@
                 position: absolute;
                 bottom: 1px;
                 border: 2px solid $bgcolor;
-
                 .icon-done {
                     color: #fff;
                     opacity: 0;
+                    transform: translateY(-1px);
                 }
             }
             input[type="checkbox"]:checked~.checkbox {

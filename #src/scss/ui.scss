@@ -104,6 +104,7 @@ form {
         transition: all 0.4s;
         outline: none;
         padding: 16px 20px;
+        font-size: 14px;
         &:focus {
             border-color: $maincolor;
         }

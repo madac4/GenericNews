@@ -744,7 +744,7 @@
             <form action="#" class="auth-modal__form auth-form active" id="login-form">
                 <label for="email">
                     Email
-                    <input type="text" id="email"  placeholder="Introdu adresa de email">
+                    <input type="text" id="email" placeholder="Introdu adresa de email">
                     <small class="error"></small>
                 </label>
                 <label for="password">
@@ -755,7 +755,7 @@
                 </label>
 
                 <div class="form-buttons">
-                    <a href="#">Ai uitat parola?</a>
+                    <button type="button" class="lost-password">Ai uitat parola?</button>
                     <button type="submit" class="button button-danger rounded">Intră în cont</button>
                 </div>
             </form>
@@ -768,7 +768,7 @@
                 </label>
                 <label for="email-register">
                     Email
-                    <input type="text" id="email-register"  placeholder="Introdu adresa de email">
+                    <input type="text" id="email-register" placeholder="Introdu adresa de email">
                     <small class="error"></small>
                 </label>
                 <label for="password-register">
@@ -779,7 +779,7 @@
                 </label>
 
                 <div class="form-buttons">
-                    <a href="#">Ai uitat parola?</a>
+                    <button type="button" class="lost-password">Ai uitat parola?</button>
                     <button type="submit" class="button button-danger rounded">Registrează-te</button>
                 </div>
             </form>
@@ -797,6 +797,7 @@
         </div>
     </div>
 </div>
+
     <div class="raport-modal">
     <h3>Raportează noutate</h3>
     <form action="#" class="raport-modal__form">
@@ -823,9 +824,11 @@
 </div>
 
     <div class="raport-error">
-    <h4>Confirmați acțiunea pe pagina generic.md</h4>
-    <p>Vă rog, evidențiați mai puțin text.</p>
-    <p>Limita: 100 simboluri</p>
+    <p>
+        Adăugați articolul în “Articole salvate”,
+        pentru a-l citi mai apoi, când veți avea timp.
+        Pentru aceasta <a href="#">întrați în cont</a> sau <a href="#">înregistrați-vă</a>.
+    </p>
 
     <button class="raport-error__close">OK</button>
 </div>
