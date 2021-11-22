@@ -54,6 +54,9 @@ const resetForm = document.querySelector('.reset-form');
 const emailMessageModal = document.querySelector('.email-message');
 const emailMessageClose = document.querySelector('.email-message .email-message__close');
 
+const headerAccount = document.querySelector('.header-buttons__account');
+const accountPopup = document.querySelector('.account-popup')
+
 if (articleSave) {
     articleSave.addEventListener('click', () => {
         raportError.classList.add('open');
@@ -232,7 +235,7 @@ if (authTabsControl) {
     })
 }
 
-if (authModal) {
+if (authOpen) {
     authOpen.addEventListener("click", () => {
         authModal.classList.add('open');
         overlay.classList.add('open');
@@ -289,6 +292,7 @@ if (lostPasswordModal) {
     closePasswordModal.addEventListener('click', () => {
         lostPasswordModal.classList.remove('open');
         overlay.classList.remove('open');
+        document.body.classList.remove('lock');
     })
 
     resetForm.addEventListener('submit', (event) => {
@@ -310,3 +314,8 @@ if (lostPasswordModal) {
     })
 }
 
+if (headerAccount) {
+    headerAccount.addEventListener('click', () =>{
+        accountPopup.classList.toggle('open')
+    })
+}

@@ -142,6 +142,22 @@
                         border: 1px solid $maincolor;
                     }
                 }
+                &__account{
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    color: $maincolor;
+                    .icon-person{
+                        color: $maincolor;
+                    }
+                    &:hover {
+                        background-color: $maincolor;
+                        color: #fff;
+                        border: 1px solid $maincolor;
+                        .icon-person{
+                            color: #fff;
+                        }
+                    }
+                }
             }
 
         }
@@ -283,6 +299,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        position: relative;
         &__search {
             font-size: 24px;
             border: 1px solid $maincolor;
@@ -357,6 +374,37 @@
                     margin-bottom: 3px;
                 }
            }
+       }
+       &__account{
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        height: 44px;
+        border: 1px solid $maincolor;
+        @media (max-width: $md2) {
+            width: auto;
+            padding: 0 8px;
+       }
+       @media (max-width: $md3) {
+            width: 36px;
+            height: 36px;
+            justify-content: center;
+        }
+        .icon-person {
+            font-size: 24px;
+            color: #fff;
+            @media (max-width: $md3) {
+                font-size: 16px;
+            }
+        }
+        .login-text{
+            font-weight: 500;
+            @media (max-width: $md2) {
+                display: none;
+           }
+        }
        }
         &__login {
             width: 116px;

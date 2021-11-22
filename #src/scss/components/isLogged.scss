@@ -1,0 +1,132 @@
+.account-popup{
+    position: absolute;
+    background-color: #fff;
+    top: 120%;
+    right: 0;
+    width: 400px;
+    z-index: 55;
+    box-shadow: 0px -4px 150px rgba(35, 56, 65, 0.05), 0px 45px 250px rgba(17, 33, 39, 0.1);
+    transform: scale(0.1);
+    transition: all 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    @media (max-width: $md6) {
+        width: 285px;
+    }
+    &.open{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    &__header{
+        padding: 30px;
+        @media (max-width: $md6) {
+            padding: 20px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 22px;
+            color: #3C3C3C;
+            @media (max-width: $md6) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__subscribe{
+        background: rgba(255, 101, 94, 0.1);
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        @media (max-width: $md6) {
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        span{
+            font-size: 16px;
+            @media (max-width: $md6) {
+                font-size: 14px;
+            }
+        }
+    }
+    &__controls{
+        padding: 0 30px;
+        margin-bottom: 30px;
+        @media (max-width: $md6) {
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        .account-control{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            transition: all 0.4s;
+            @media (max-width: $md6) {
+                font-size: 14px;
+            }
+            &:hover{
+                color: $accentcolor
+            }
+            &:not(:last-child){
+                margin-bottom: 30px;
+                @media (max-width: $md6) {
+                    margin-bottom: 20px;
+                }
+            }
+            i{
+                font-size: 24px;
+                margin-right: 10px;
+                @media (max-width: $md6) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &__buttons{
+        padding: 0 30px;
+        margin-bottom: 30px;
+        @media (max-width: $md6) {
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        .account-logout{
+            border-color: $accentcolor;
+            color: $accentcolor;
+            font-weight: normal;
+            font-size: 16px;
+            &:hover{
+                background-color: $accentcolor;
+                color: #fff;
+            }
+        }
+    }
+    &__info{
+        padding: 0 30px;
+        margin-bottom: 30px;
+        @media (max-width: $md6) {
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        h5{
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                i{
+                    font-size: 20px;
+                    color: $accentcolor;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
