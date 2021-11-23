@@ -114,9 +114,10 @@
                                     margin: 0 5px;
                                 }
                             }
-                            p{
+                            .sidebar-slider__title{
                                 margin: 20px;
                                 line-height: 140%;
+                                display: block;
                                 @media (max-width: $md3) {
                                     margin: 0;
                                     margin: 20px 0;

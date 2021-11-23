@@ -33,7 +33,7 @@ const upperHeader = document.querySelector('.upper-header');
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header-menu');
 
-const homeArticles = document.querySelector('.blog-article__post');
+const homeArticles = document.querySelector('.blog-article__post--home');
 
 const sidebarWrite = document.querySelector('.sidebar-write');
 const raportModal = document.querySelector('.raport-modal');
@@ -55,7 +55,16 @@ const emailMessageModal = document.querySelector('.email-message');
 const emailMessageClose = document.querySelector('.email-message .email-message__close');
 
 const headerAccount = document.querySelector('.header-buttons__account');
-const accountPopup = document.querySelector('.account-popup')
+const accountPopup = document.querySelector('.account-popup');
+
+const tabs = document.querySelectorAll(".button-tab");
+const tabsPopup = document.querySelectorAll(".account-control");
+const contents = document.querySelectorAll(".profile-modal__content");
+
+const profileModal = document.querySelector(".profile-modal");
+const profileModalClose = document.querySelector(".profile-modal__close");
+
+const accountFollow = document.querySelector('.account-follow');
 
 if (articleSave) {
     articleSave.addEventListener('click', () => {
@@ -87,7 +96,7 @@ if (burger) {
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
         menu.classList.toggle('active');
-        // overlay.classList.toggle('open');
+        accountPopup.classList.remove('open')
         document.body.classList.toggle('lock');
     })
 }
@@ -315,7 +324,64 @@ if (lostPasswordModal) {
 }
 
 if (headerAccount) {
-    headerAccount.addEventListener('click', () =>{
+    headerAccount.addEventListener('click', () => {
         accountPopup.classList.toggle('open')
+    })
+}
+
+
+
+
+if (profileModal) {
+for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", () => {
+        for (let j = 0; j < contents.length; j++) {
+            contents[j].classList.remove("show");
+        }
+        for (let jj = 0; jj < tabs.length; jj++) {
+            tabs[jj].classList.remove("active");
+        }
+        contents[i].classList.add("show");
+        tabs[i].classList.add("active");
+    });
+}
+    for (let i = 0; i < tabsPopup.length; i++) {
+    tabsPopup[i].addEventListener("click", () => {
+        profileModal.classList.add('open');
+        overlay.classList.add('open');
+        document.body.classList.add('lock');
+        accountPopup.classList.remove('open')
+        for (let j = 0; j < contents.length; j++) {
+            contents[j].classList.remove("show");
+        }
+        for (let jj = 0; jj < tabsPopup.length; jj++) {
+            tabs[jj].classList.remove("active");
+        }
+        contents[i].classList.add("show");
+        tabs[i].classList.add("active");
+    });
+}
+
+profileModalClose.addEventListener("click", () => {
+    profileModal.classList.remove('open')
+    overlay.classList.remove('open');
+    document.body.classList.remove('lock');
+})
+}
+
+if(accountFollow){
+    accountFollow.addEventListener('click', () =>{
+        profileModal.classList.add('open');
+        overlay.classList.add('open');
+        document.body.classList.add('lock');
+        accountPopup.classList.remove('open')
+        for (let j = 0; j < contents.length; j++) {
+            contents[j].classList.remove("show");
+        }
+        for (let jj = 0; jj < tabsPopup.length; jj++) {
+            tabs[jj].classList.remove("active");
+        }
+        contents[2].classList.add("show");
+        tabs[2].classList.add("active");
     })
 }
