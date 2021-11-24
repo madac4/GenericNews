@@ -1,8 +1,8 @@
-.footer{
+.footer {
     background-color: $bgcolor;
     padding-top: 50px;
     padding-bottom: 20px;
-    &-container{
+    &-container {
         display: flex;
         justify-content: space-between;
         @media (max-width: $md2) {
@@ -14,34 +14,34 @@
             gap: 40px;
         }
     }
-    &-column{
+    &-column {
         width: 100%;
         @media (max-width: $md3) {
             text-align: center;
         }
-        h5{
+        h5 {
             color: #fff;
             margin-bottom: 10px;
         }
-        &__list{
-            li{
-                &:not(:last-child){
+        &__list {
+            li {
+                &:not(:last-child) {
                     margin-bottom: 16px;
                 }
-                a{
+                a {
                     font-size: 16px;
                     color: #FFFFFF;
                 }
             }
         }
-        form{
+        form {
             display: flex;
             align-items: center;
             width: 100%;
             @media (max-width: $md2) {
                 flex-direction: column;
             }
-            input{
+            input {
                 height: 50px;
                 width: 260px;
                 border: 2px solid #FFFFFF;
@@ -58,7 +58,7 @@
                     max-width: 350px;
                 }
             }
-            button{
+            button {
                 border: none;
                 width: 112px;
                 @media (max-width: $md2) {
@@ -71,7 +71,7 @@
             }
         }
     }
-    &-copyright{
+    &-copyright {
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;

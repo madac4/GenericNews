@@ -1,4 +1,4 @@
-.email-message{
+.email-message {
     background-color: #fff;
     max-width: 430px;
     position: fixed;
@@ -9,15 +9,15 @@
     transition: all 0.4s;
     opacity: 0;
     visibility: hidden;
-    &.open{
+    &.open {
         opacity: 1;
         visibility: visible;
     }
-    h3{
+    h3 {
         padding: 30px;
         padding-bottom: 0;
     }
-    p{
+    p {
         margin-top: 15px;
         font-size: 14px;
         line-height: 140%;
@@ -28,11 +28,11 @@
         padding-bottom: 20px;
         border-bottom: 1px solid $linecolor;
     }
-    &__block{
+    &__block {
         padding-bottom: 20px;
         padding-right: 30px;
     }
-    .email-message__close{
+    .email-message__close {
         width: 100px;
         margin-left: auto;
     }

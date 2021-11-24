@@ -22,7 +22,7 @@
         justify-content: space-between;
         background-color: #fff;
         @media (max-width: $md4) {
-            height:auto;
+            height: auto;
             padding: 20px 0;
         }
         @media (max-width: $md6) {
@@ -73,7 +73,6 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            
             a {
                 &:hover {
                     span {
@@ -101,7 +100,6 @@
                 align-items: center;
                 justify-content: center;
                 .lost-password {
-                    
                     color: #2C5282;
                 }
                 button {
@@ -155,7 +153,8 @@
     }
 }
 
-label, p {
+label,
+p {
     position: relative;
     .icon-eye {
         position: absolute;

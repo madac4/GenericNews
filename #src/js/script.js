@@ -115,7 +115,7 @@ if (homeArticles) {
 }
 
 if (searchModal) {
-    searchButton.addEventListener('click', function () {
+    searchButton.addEventListener('click', function() {
         searchModal.classList.add('open');
         document.body.classList.add('lock');
         setTimeout(() => {
@@ -130,28 +130,28 @@ if (searchModal) {
 }
 
 if (passwordToggler) {
-    passwordToggler.addEventListener('click', function (e) {
+    passwordToggler.addEventListener('click', function(e) {
         const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
         password.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
 }
 if (passwordToggler2) {
-    passwordToggler2.addEventListener('click', function (e) {
+    passwordToggler2.addEventListener('click', function(e) {
         const type = passwordRegister.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordRegister.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
 }
 if (passwordToggler3) {
-    passwordToggler3.addEventListener('click', function (e) {
+    passwordToggler3.addEventListener('click', function(e) {
         const type = passwordNew.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordNew.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
     });
 }
 if (passwordToggler4) {
-    passwordToggler4.addEventListener('click', function (e) {
+    passwordToggler4.addEventListener('click', function(e) {
         const type = passwordConfirm.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordConfirm.setAttribute('type', type);
         this.classList.toggle('icon-eye-slash');
@@ -276,11 +276,28 @@ if (shareButton) {
         shareOptions.classList.toggle('open');
     });
     copyToClipboard.addEventListener('click', () => {
-        const currentUrl = window.location.href;
-        navigator.clipboard.writeText(currentUrl)
-        copyToClipboard.textContent = 'LINK COPIAT'
-        copyToClipboard.classList.remove('button-outline');
-        copyToClipboard.classList.add('button-light');
+        if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(window.location.href);
+        } else {
+            // text area method
+            let textArea = document.createElement("textarea");
+            textArea.value = window.location.href;
+            // make the textarea out of viewport
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
+            textArea.style.top = "-999999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            return new Promise((res, rej) => {
+                document.execCommand('copy') ? res() : rej();
+                textArea.remove();
+                copyToClipboard.textContent = 'LINK COPIAT'
+                copyToClipboard.classList.remove('button-outline');
+                copyToClipboard.classList.add('button-light');
+            });
+        }
+        // navigator.clipboard.writeText(window.location.href)
     })
 }
 
@@ -333,44 +350,44 @@ if (headerAccount) {
 
 
 if (profileModal) {
-for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", () => {
-        for (let j = 0; j < contents.length; j++) {
-            contents[j].classList.remove("show");
-        }
-        for (let jj = 0; jj < tabs.length; jj++) {
-            tabs[jj].classList.remove("active");
-        }
-        contents[i].classList.add("show");
-        tabs[i].classList.add("active");
-    });
-}
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener("click", () => {
+            for (let j = 0; j < contents.length; j++) {
+                contents[j].classList.remove("show");
+            }
+            for (let jj = 0; jj < tabs.length; jj++) {
+                tabs[jj].classList.remove("active");
+            }
+            contents[i].classList.add("show");
+            tabs[i].classList.add("active");
+        });
+    }
     for (let i = 0; i < tabsPopup.length; i++) {
-    tabsPopup[i].addEventListener("click", () => {
-        profileModal.classList.add('open');
-        overlay.classList.add('open');
-        document.body.classList.add('lock');
-        accountPopup.classList.remove('open')
-        for (let j = 0; j < contents.length; j++) {
-            contents[j].classList.remove("show");
-        }
-        for (let jj = 0; jj < tabsPopup.length; jj++) {
-            tabs[jj].classList.remove("active");
-        }
-        contents[i].classList.add("show");
-        tabs[i].classList.add("active");
-    });
+        tabsPopup[i].addEventListener("click", () => {
+            profileModal.classList.add('open');
+            overlay.classList.add('open');
+            document.body.classList.add('lock');
+            accountPopup.classList.remove('open')
+            for (let j = 0; j < contents.length; j++) {
+                contents[j].classList.remove("show");
+            }
+            for (let jj = 0; jj < tabsPopup.length; jj++) {
+                tabs[jj].classList.remove("active");
+            }
+            contents[i].classList.add("show");
+            tabs[i].classList.add("active");
+        });
+    }
+
+    profileModalClose.addEventListener("click", () => {
+        profileModal.classList.remove('open')
+        overlay.classList.remove('open');
+        document.body.classList.remove('lock');
+    })
 }
 
-profileModalClose.addEventListener("click", () => {
-    profileModal.classList.remove('open')
-    overlay.classList.remove('open');
-    document.body.classList.remove('lock');
-})
-}
-
-if(accountFollow){
-    accountFollow.addEventListener('click', () =>{
+if (accountFollow) {
+    accountFollow.addEventListener('click', () => {
         profileModal.classList.add('open');
         overlay.classList.add('open');
         document.body.classList.add('lock');

@@ -1,8 +1,8 @@
 .content {
     &-container {
-        &__body{
-            .content-category{
-                .category-main{
+        &__body {
+            .content-category {
+                .category-main {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -16,25 +16,24 @@
                     @media (max-width: $md4) {
                         padding: 0 20px;
                     }
-                    h1{
+                    h1 {
                         text-align: center;
-                        a{
+                        a {
                             color: #fff;
                         }
                     }
-                    &__meta{
+                    &__meta {
                         width: 100%;
                         position: absolute;
                         bottom: 0;
                         padding: 20px;
                         border-top: 1px solid $linecolor;
-
-                        span{
+                        span {
                             color: #fff;
                             display: inline-flex;
                             align-items: center;
                             font-size: 18px;
-                            &:not(:last-child){
+                            &:not(:last-child) {
                                 margin-right: 30px;
                                 @media (max-width: $md4) {
                                     margin-right: 15px;
@@ -43,7 +42,7 @@
                             @media (max-width: $md4) {
                                 font-size: 16px;
                             }
-                            i{
+                            i {
                                 font-size: 24px;
                                 color: #fff;
                                 margin-right: 5px;

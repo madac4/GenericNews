@@ -1,4 +1,4 @@
-.authSubmit-modal{
+.authSubmit-modal {
     max-width: 620px;
     width: 100%;
     margin: 0 auto;
@@ -19,29 +19,29 @@
     @media (max-width: $md6) {
         padding: 20px;
     }
-    &.open{
+    &.open {
         opacity: 1;
         visibility: visible;
     }
-    &__content{
-        .authSubmit-modal__logo{
+    &__content {
+        .authSubmit-modal__logo {
             margin-bottom: 100px;
         }
-        h3{
+        h3 {
             margin-bottom: 45px;
         }
-        strong{
+        strong {
             margin-bottom: 10px;
         }
-        p{
-            &:not(:last-child){
+        p {
+            &:not(:last-child) {
                 margin-bottom: 40px;
             }
-            a{
+            a {
                 font-weight: 500;
             }
         }
-        .authSubmit-button{
+        .authSubmit-button {
             margin-bottom: 40px;
             width: 310px;
             @media (max-width: $md6) {
@@ -49,22 +49,21 @@
             }
         }
     }
-    &__social{
+    &__social {
         margin-top: 50px;
         display: flex;
         align-items: center;
-        a{
+        a {
             display: block;
             transition: all 0.4s;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-right: 20px;
             }
-            &:hover{
+            &:hover {
                 transform: scale(1.1);
             }
-            i{
+            i {
                 font-size: 40px;
-
             }
         }
     }

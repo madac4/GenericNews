@@ -1,4 +1,4 @@
-.mistake-modal{
+.mistake-modal {
     max-width: 475px;
     width: 100%;
     background-color: #fff;
@@ -13,42 +13,41 @@
     @media (max-width: $md5) {
         max-width: 95%;
     }
-    &.open{
+    &.open {
         opacity: 1;
         visibility: visible;
     }
-    &__content{
+    &__content {
         max-width: 80%;
         margin: 0 auto;
-        h3{
+        h3 {
             margin-bottom: 20px;
         }
-        p{
+        p {
             margin-bottom: 30px;
             font-size: 16px;
             color: #BDBDBD;
-            strong{
+            strong {
                 margin-left: 5px;
                 font-weight: 600;
                 color: #FF655E;
             }
         }
-
-        .mistake-form{
-            .mistake-form__buttons{
+        .mistake-form {
+            .mistake-form__buttons {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                button{
-                    height:46px;
+                button {
+                    height: 46px;
                     padding: 0;
                     @media (max-width: $md6) {
-                        font-size: 14px; 
+                        font-size: 14px;
                     }
                 }
-                .mistake-form__close{
+                .mistake-form__close {
                     color: #838383;
-                    &:hover{
+                    &:hover {
                         color: $accentcolor;
                     }
                 }

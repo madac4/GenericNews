@@ -1798,7 +1798,7 @@ p .icon-eye {
   background-color: #fff;
   padding: 20px 25px;
   opacity: 0;
-  height: 180px;
+  max-width: 390px;
   visibility: hidden;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -1830,13 +1830,12 @@ p .icon-eye {
 }
 
 .raport-error button {
-  position: absolute;
-  bottom: 20px;
-  right: 25px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.75px;
   display: block;
+  margin-left: auto;
+  margin-top: 30px;
   text-transform: uppercase;
   color: #FF655E;
 }
@@ -4173,23 +4172,23 @@ p .icon-eye {
   }
 
   h1 {
-    font-size: calc( 28px + 20 * ((100vw - 320px) / 790));
+    font-size: calc( 28px + 20 * ((100vw - 320px) / 790));
   }
 
   h2 {
-    font-size: calc( 22px + 14 * ((100vw - 320px) / 790));
+    font-size: calc( 22px + 14 * ((100vw - 320px) / 790));
   }
 
   h3 {
-    font-size: calc( 18px + 6 * ((100vw - 320px) / 790));
+    font-size: calc( 18px + 6 * ((100vw - 320px) / 790));
   }
 
   h4 {
-    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
+    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
   }
 
   h5 {
-    font-size: calc( 14px + 2 * ((100vw - 320px) / 790));
+    font-size: calc( 14px + 2 * ((100vw - 320px) / 790));
   }
 
   .recomandation-meta span:not(:last-child) {
@@ -4345,7 +4344,7 @@ p .icon-eye {
   .content-container__body .blog-article__body h4,
   .content-container__body .blog-article__body h5,
   .content-container__body .blog-article__body h6 {
-    margin-top: calc( 20px + 20 * ((100vw - 320px) / 790));
+    margin-top: calc( 20px + 20 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body P,
@@ -4355,31 +4354,31 @@ p .icon-eye {
   .content-container__body .blog-article__body h4,
   .content-container__body .blog-article__body h5,
   .content-container__body .blog-article__body h6 {
-    margin-bottom: calc( 20px + 20 * ((100vw - 320px) / 790));
+    margin-bottom: calc( 20px + 20 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body p {
-    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
+    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body i {
-    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
+    font-size: calc( 16px + 2 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body h3 {
-    padding-bottom: calc( 20px + 20 * ((100vw - 320px) / 790));
+    padding-bottom: calc( 20px + 20 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body h3 {
-    padding-top: calc( 20px + 20 * ((100vw - 320px) / 790));
+    padding-top: calc( 20px + 20 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body h3 {
-    padding-left: calc( 15px + 15 * ((100vw - 320px) / 790));
+    padding-left: calc( 15px + 15 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body h3 {
-    padding-right: calc( 15px + 15 * ((100vw - 320px) / 790));
+    padding-right: calc( 15px + 15 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__body .post-cite__author {
@@ -4397,7 +4396,7 @@ p .icon-eye {
   }
 
   .content-container__body .blog-article__body .post-cite__text i {
-    font-size: calc( 16px + 4 * ((100vw - 320px) / 790));
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 790));
   }
 
   .content-container__body .blog-article__controls .blog-article__share .share-options {

@@ -196,14 +196,13 @@
             box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
             h4 {
                 padding: 20px;
-                &:not(:first-child){
+                &:not(:first-child) {
                     border-top: 1px solid $linecolor;
                 }
             }
             &__post {
                 position: relative;
             }
-            
             .blog-article__notlog {
                 padding: 75px 0;
                 position: absolute;
@@ -217,7 +216,6 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                
                 &.flip {
                     opacity: 1;
                     transform: rotateY(0);
@@ -229,9 +227,9 @@
                     font-size: 18px;
                     line-height: 160%;
                     @media (max-width: $md6) {
-                         max: width 100%;
-                         font-size: 16px;
-                         padding: 0 20px;
+                        max: width 100%;
+                        font-size: 16px;
+                        padding: 0 20px;
                     }
                     a {
                         color: #005B9C;

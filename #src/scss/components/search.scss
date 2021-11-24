@@ -10,7 +10,6 @@
     @media (max-width: $md4) {
         padding: 20px 15px;
     }
-    
     &.open {
         opacity: 1;
         visibility: visible
@@ -70,7 +69,7 @@
             border-bottom: 2px solid $linecolor;
         }
     }
-    &__results{
+    &__results {
         overflow: auto;
         height: 70vh;
     }

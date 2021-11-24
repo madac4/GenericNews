@@ -1,30 +1,30 @@
 .content {
     &-container {
-        &__body{
+        &__body {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            .article-header{
+            .article-header {
                 position: relative;
                 background-color: #fff;
                 padding: 20px;
                 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-                &__info{
+                &__info {
                     display: flex;
                     align-items: center;
                     margin-bottom: 20px;
-                    small, span{
+                    small,
+                    span {
                         font-size: 16px;
                         color: #8F9BB3;
-
                     }
-                    span{
+                    span {
                         margin: 0 5px;
                     }
-                    a{
+                    a {
                         font-size: 16px;
                     }
-                    .article-save{
+                    .article-save {
                         font-size: 26px;
                         padding: 10px;
                         border: 1px solid $linecolor;
@@ -34,98 +34,102 @@
                         color: $maincolor;
                     }
                 }
-                h1{
+                h1 {
                     color: $bgcolor;
                 }
-                &__meta{
+                &__meta {
                     display: flex;
                     align-items: center;
                     margin-top: 20px;
-                    p{
+                    p {
                         font-weight: 500;
                         font-size: 16px;
                         color: #3C3C3C;
                     }
-                    span{
+                    span {
                         font-size: 18px;
                         color: #BDBDBD;
                         margin: 0 10px;
                     }
-                    small{
+                    small {
                         font-size: 16px;
                         color: #BDBDBD;
                         display: inline-flex;
                         align-items: center;
-                        i{
+                        i {
                             font-size: 18px;
                             color: #BDBDBD;
                         }
                     }
                 }
             }
-
-            .blog-article__body{
+            .blog-article__body {
                 background-color: #fff;
                 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-                .post-image{
+                .post-image {
                     width: 100%;
                     padding: 20px;
                     height: 300px;
                     object-fit: cover;
                     @media (max-width: $md4) {
-                    height: 230px;
+                        height: 230px;
                     }
                 }
-                P, h2, strong,h3,h4,h5,h6{
+                P,
+                h2,
+                strong,
+                h3,
+                h4,
+                h5,
+                h6 {
                     display: block;
                     padding: 0 20px;
                     @include adaptiv-value('margin-top', 40, 20, 1);
                     @include adaptiv-value('margin-bottom', 40, 20, 1);
-
                 }
-                p{
+                p {
                     line-height: 150%;
                     @include adaptiv-value('font-size', 18, 16, 1);
-                    strong{
+                    strong {
                         display: inline-block;
                         padding: 0;
                         margin: 0;
                     }
                 }
-                i{
+                i {
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 150%;
                     @include adaptiv-value('font-size', 18, 16, 1);
                 }
-                h3{
+                h3 {
                     font-weight: 600;
                     line-height: 150%;
                     color: #FF655E;
                     border-top: 1px solid $linecolor;
                     border-bottom: 1px solid $linecolor;
-                    text-align:center;
+                    text-align: center;
                     @include adaptiv-value('padding-bottom', 40, 20, 1);
                     @include adaptiv-value('padding-top', 40, 20, 1);
                     @include adaptiv-value('padding-left', 30, 15, 1);
                     @include adaptiv-value('padding-right', 30, 15, 1);
                 }
-                .post-media{
-                    img{
+                .post-media {
+                    img {
                         display: block;
                         width: auto;
                         max-width: 95%;
                         height: auto;
                         margin: 0 auto;
                     }
-                    iframe{
+                    iframe {
                         display: block;
                         margin: 0 auto;
                         @media (max-width: $md4) {
                             max-width: 95%;
                         }
                     }
-                    small{
+                    small {
                         display: block;
                         max-width: 530px;
                         margin: 0 auto;
@@ -136,7 +140,7 @@
                         margin-top: 20px;
                     }
                 }
-                .post-cite{
+                .post-cite {
                     display: flex;
                     align-items: center;
                     border-top: 1px solid $linecolor;
@@ -144,7 +148,7 @@
                     @media (max-width: $md5) {
                         flex-direction: column;
                     }
-                    &__author{
+                    &__author {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -157,7 +161,7 @@
                         @media (max-width: $md5) {
                             padding: 20px;
                         }
-                        img{
+                        img {
                             width: 64px;
                             height: 64px;
                             border-radius: 50%;
@@ -167,16 +171,16 @@
                                 margin-bottom: 10px;
                             }
                         }
-                        .author-info{
-                            strong{
+                        .author-info {
+                            strong {
                                 margin: 0;
                                 padding: 0;
                                 margin-bottom: 5px;
                             }
                         }
                     }
-                    &__text{
-                        i{
+                    &__text {
+                        i {
                             font-size: 20px;
                             line-height: 140%;
                             font-weight: normal;
@@ -191,30 +195,28 @@
                         }
                     }
                 }
-
-                .keyboard-shorcut{
+                .keyboard-shorcut {
                     padding: 20px;
                     border-top: 1px solid $linecolor;
                     @media (max-width: $md3) {
                         display: none;
                     }
-                    p{
+                    p {
                         margin: 0;
                         font-size: 16px;
                         color: #BDBDBD;
-                        span{
+                        span {
                             border: 1px solid #BDBDBD;
                             padding: 6px 10px;
-                            color:#BDBDBD;
+                            color: #BDBDBD;
                         }
                     }
                 }
-
-                .plan-changer{
+                .plan-changer {
                     box-shadow: 0px -100px 150px #FFFFFF;
                     position: relative;
                     z-index: 2;
-                    h3{
+                    h3 {
                         color: $maincolor;
                         display: flex;
                         align-items: center;
@@ -223,7 +225,7 @@
                         margin: 0 auto;
                         margin-bottom: 10px;
                         border: none;
-                        img{
+                        img {
                             margin-right: 10px;
                             width: 30px;
                             height: 30px;
@@ -234,23 +236,22 @@
                             }
                         }
                     }
-                    p{
+                    p {
                         margin: 0;
                     }
-                    .plan-changer__grid{
+                    .plan-changer__grid {
                         display: grid;
-                        grid-template-columns: repeat(3,1fr );
+                        grid-template-columns: repeat(3, 1fr);
                         grid-gap: 20px;
                         margin-top: 10px;
                         padding: 20px;
                         @media (max-width: $md3) {
-                            grid-template-columns: repeat(2,1fr );
-                            
+                            grid-template-columns: repeat(2, 1fr);
                         }
                         @media (max-width: $md6) {
-                            grid-template-columns: repeat(1,1fr);
+                            grid-template-columns: repeat(1, 1fr);
                         }
-                        .plan-changer__plan{
+                        .plan-changer__plan {
                             box-shadow: 0px 0px 30px rgba(116, 155, 255, 0.2);
                             width: 100%;
                             height: 285px;
@@ -259,38 +260,38 @@
                                 padding: 20px;
                             }
                             @media (max-width: $md3) {
-                                &:last-child{
+                                &:last-child {
                                     grid-column: 2 span;
                                 }
                             }
                             @media (max-width: $md3) {
-                                &:last-child{
+                                &:last-child {
                                     grid-column: 1 span;
                                 }
                             }
-                            &.list{
+                            &.list {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                .plan-content{
+                                .plan-content {
                                     display: flex;
                                     gap: 0;
-                                    h4{
+                                    h4 {
                                         font-family: 'Inter';
                                         padding: 0;
                                         margin: 0;
                                         margin-bottom: 20px;
                                     }
-                                    ul{
-                                        li{
+                                    ul {
+                                        li {
                                             display: flex;
                                             align-items: center;
                                             font-size: 16px;
                                             color: $bgcolor;
-                                            &:not(:last-child){
+                                            &:not(:last-child) {
                                                 margin-bottom: 20px;
                                             }
-                                            span{
+                                            span {
                                                 margin-right: 5px;
                                                 color: $accentcolor;
                                                 font-size: 24px;
@@ -299,44 +300,41 @@
                                     }
                                 }
                             }
-                            .plan-content{
+                            .plan-content {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 30px;
-                                h3{
+                                h3 {
                                     font-family: "RobotoSlab";
                                     padding: 0;
                                     margin: 0;
                                 }
-                                
-                                &__price{
-                                    h2{
+                                &__price {
+                                    h2 {
                                         padding: 0;
                                         margin: 0;
                                     }
-                                    span{
+                                    span {
                                         font-size: 18px;
                                         color: #AFAFAF;
                                     }
                                 }
-                                a{
+                                a {
                                     width: 130px;
                                 }
                             }
-                            
                         }
                     }
                 }
             }
-
-            .blog-article__controls{
+            .blog-article__controls {
                 display: flex;
                 align-items: center;
                 gap: 20px;
                 @media (max-width: $md5) {
                     flex-direction: column;
                 }
-                .blog-article__tags{
+                .blog-article__tags {
                     display: flex;
                     align-items: center;
                     flex-wrap: wrap;
@@ -345,20 +343,19 @@
                     gap: 10px;
                     width: 100%;
                     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-                    .tag{
+                    .tag {
                         display: inline-block;
                         background-color: $bgcolor;
                         padding: 8px 10px;
                         font-size: 12px;
                         color: #fff;
                         transition: all 0.4s;
-                        &:hover{
+                        &:hover {
                             background-color: $accentcolor;
                         }
                     }
                 }
-
-                .blog-article__share{
+                .blog-article__share {
                     background-color: #fff;
                     padding: 20px;
                     height: 100%;
@@ -371,19 +368,18 @@
                     @media (max-width: $md5) {
                         width: 100%;
                     }
-                    .share{
+                    .share {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         font-size: 16px;
-                        span{
+                        span {
                             font-size: 24px;
                             color: $accentcolor;
                             margin-left: 5px;
                         }
                     }
-
-                    .share-options{
+                    .share-options {
                         position: absolute;
                         left: calc(100% + 20px);
                         width: 320px;
@@ -396,7 +392,7 @@
                         opacity: 0;
                         visibility: hidden;
                         transition: all 0.4s;
-                        &.open{
+                        &.open {
                             transform: translateX(0);
                             opacity: 1;
                             visibility: visible;
@@ -412,24 +408,24 @@
                             width: 100%;
                             padding: 30px 0;
                         }
-                        &__body{
+                        &__body {
                             max-width: 220px;
                             width: 100%;
                             @media (max-width: $md6) {
                                 max-width: 70%;
                             }
                         }
-                        &__social{
+                        &__social {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
                             margin-bottom: 20px;
-                            a{
-                                img{
+                            a {
+                                img {
                                     width: 32px;
                                     height: 32px;
                                     transition: all 0.4s;
-                                    &:hover{
+                                    &:hover {
                                         transform: scale(1.1);
                                     }
                                     @media (max-width: $md5) {
@@ -439,7 +435,7 @@
                                 }
                             }
                         }
-                        &__link{
+                        &__link {
                             color: #fff;
                             padding: 9px 0;
                             width: 100%;
@@ -449,15 +445,15 @@
                             font-size: 14px;
                             letter-spacing: 0.03em;
                             text-transform: uppercase;
-                            &.button-light{
+                            &.button-light {
                                 color: $maincolor;
                             }
-                            &:hover{
+                            &:hover {
                                 background-color: #fff;
                                 border-color: #fff;
-                                color:$maincolor;
+                                color: $maincolor;
                             }
-                            span{
+                            span {
                                 font-size: 18px;
                                 margin-right: 5px;
                             }
@@ -465,50 +461,48 @@
                     }
                 }
             }
-
-            .blog-article__ads{
+            .blog-article__ads {
                 width: 100%;
                 background-color: #fff;
                 padding: 20px;
                 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-                a{
-                    img{
+                a {
+                    img {
                         width: 100%;
-                        height: 100%; 
+                        height: 100%;
                     }
                 }
             }
-
-            .blog-article__other{
+            .blog-article__other {
                 background: #FFFFFF;
                 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-                h4{
+                h4 {
                     padding: 20px;
                     border-bottom: 1px solid $linecolor;
                 }
-                .blog-others__grid{
+                .blog-others__grid {
                     padding: 20px;
                     display: grid;
-                    grid-template-columns: repeat(3,1fr);
+                    grid-template-columns: repeat(3, 1fr);
                     grid-gap: 20px;
                     @media (max-width: $md4) {
-                        grid-template-columns: repeat(2,1fr);
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     @media (max-width: $md5) {
-                        grid-template-columns: repeat(1,1fr);
+                        grid-template-columns: repeat(1, 1fr);
                     }
-                    .blog-other__item{
+                    .blog-other__item {
                         width: 100%;
                         height: 200px;
                         display: flex;
                         align-items: center;
                         position: relative;
-                        h5{
+                        h5 {
                             padding: 20px;
                             flex: 1;
-                            a{
+                            a {
                                 color: #fff;
-                                &::after{
+                                &::after {
                                     content: "";
                                     position: absolute;
                                     display: block;
@@ -518,7 +512,7 @@
                                 }
                             }
                         }
-                        .recomandation-meta{
+                        .recomandation-meta {
                             padding: 10px;
                             border-top: 1px solid $linecolor;
                             position: absolute;
@@ -530,8 +524,7 @@
             }
         }
     }
-
-    .single-controls{
+    .single-controls {
         @media (max-width: 1542px) {
             display: none;
         }
@@ -541,7 +534,7 @@
         @media (max-width: 1240px) {
             display: none;
         }
-        &__arrow{
+        &__arrow {
             padding: 66px 14px;
             background: #C6C6C6;
             position: fixed;
@@ -551,18 +544,17 @@
             justify-content: center;
             z-index: 2;
             transition: all 0.4s;
-            &:hover{
+            &:hover {
                 background-color: $bgcolor;
-                span{
+                span {
                     color: #fff;
                 }
             }
-            span{
+            span {
                 font-size: 24px;
                 color: $maincolor;
             }
-
-            .single-controls__post{
+            .single-controls__post {
                 position: absolute;
                 display: flex;
                 align-items: center;
@@ -572,17 +564,17 @@
                 padding: 10px;
                 border: 1px solid #000;
                 transition: all 0.4s;
-                img{
+                img {
                     width: 124px;
                     height: 124px;
                     object-fit: cover;
                     margin-right: 10px;
                 }
-                .single-controls__content{
-                    h6{
+                .single-controls__content {
+                    h6 {
                         padding-bottom: 15px;
                     }
-                    a{
+                    a {
                         display: flex;
                         justify-content: flex-end;
                         padding-top: 10px;
@@ -592,26 +584,26 @@
                 }
             }
         }
-        .arrow-next{
+        .arrow-next {
             right: 0;
-            &:hover{
-                .single-controls__post{
+            &:hover {
+                .single-controls__post {
                     transform: translateX(0%);
                 }
             }
-            .single-controls__post{
+            .single-controls__post {
                 right: 100%;
                 transform: translateX(130%);
             }
         }
-        .arrow-prev{
+        .arrow-prev {
             left: 0;
-            &:hover{
-                .single-controls__post{
+            &:hover {
+                .single-controls__post {
                     transform: translateX(0%);
                 }
             }
-            .single-controls__post{
+            .single-controls__post {
                 left: 100%;
                 transform: translateX(-130%);
             }
